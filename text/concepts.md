@@ -5,3 +5,4 @@
 * Guidet tur til naturkatastrofer, dykking i oversvømmede byer, atom-krater hike,  etc..
 * Rent a sheep roboter har blitt ulovlig, ingen vil klippe gress, rent a sheep er det nye alternativet. Velg type plen, type saue (alle sauer har forksjelige specs/pris) Mulig implementering av business or pleasure modul.
 * Medisin til alt/Et marked med forksjellige medisiner som løser forskjellige problemer. Viser animasjoner om hvordan pillen fungerer
+* Dette ser bra ut, prøver å lære med github flowen nå. Hilsen Erik
