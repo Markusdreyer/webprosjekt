@@ -32,4 +32,8 @@ Er det merge conflict; gå i filen, fiks feilen og start fra 1
 ## Annet
 * `cmd + k` fjerner alt fra terminalen
 * chill terminal program **Hyper**
+<<<<<<< HEAD
+* chill markdown skrive program **Bear**
+=======
 
+>>>>>>> b08af6a687a78709b55054264f6db4c864b39130
