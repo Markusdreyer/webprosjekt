@@ -1,0 +1,42 @@
+h1 {
+    color: blue;
+}
+
+#barn {
+
+    width: 50px;
+}
+
+#barn:hover {
+    animation: example 5s;
+
+}
+@keyframes example {
+    0% {
+        width: 50px;
+    }
+    100% {
+        width: 500px;
+    }
+}
+
+/* The element to apply the animation to */
+input {
+    width: 100px;
+    height: 25px;
+
+    background-color: red;
+
+}
+input:focus{
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+}
+input:not(:focus){
+  -webkit-animation-name: example1; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example1;
+    animation-duration: 4s;
+}

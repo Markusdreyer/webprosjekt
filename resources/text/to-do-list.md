@@ -1,0 +1,14 @@
+# To-do-list
+- Ferdige skisser innen torsdag
+- Lage farge-palett, med fargekoder
+- Hva slags elementer som skal med
+- Bestemme oss for struktur-standard
+- Se på gif-muligheter
+- fast pris
+- Lage om oss / about teksten / goal
+- Farmville-music
+- Lage storyboard til hver enkelt side innen torsdag
+- lage handligsplan
+- gjennomføringsplan
+- arbeidsfordeling
+- starte på rapport
