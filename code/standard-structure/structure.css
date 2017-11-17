@@ -8,11 +8,11 @@ h1 {
     background-color: blue;
 }
 
-@@keyframes animation {
+@keyframes animation {
     0% {
-
+        widht: 100px;
     }
     100% {
-        
+
     }
 }
