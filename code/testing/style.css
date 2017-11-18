@@ -1,10 +1,41 @@
+body {
+    background-color: rgb(106, 219, 59);
+}
+
 #selector {
     text-align: center;
-    font-size: 50px;
+    font-size: 70px;
+    color: #eb7e38;
+    line-height: 0px;
+}
+
+/*
+* finn en løsning på å velge en id innenfor spesifikk ta, slik som nedenfor
+*/
+
+#home-btn {
+    background-color: grey;
+    display: inline;
+
+    border-width: medium;
+    border-style: groove;
+
+}
+
+h1 {
+    position: relative;
+    top: 2%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    top: 200px;
 }
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .sun {
@@ -15,6 +46,7 @@ a {
 /*
 * frontpage-section
 */
+
 #frontpage-sun {
     border-radius: 300px;
     width: 500px;
@@ -40,6 +72,7 @@ a {
 /*
 * blueInner-section
 */
+
 #blueInner-sun {
     border-radius: 300px;
     width: 500px;
@@ -196,7 +229,7 @@ a {
 * fullBlue-section
 */
 
-#fullblue-sun {
+#fullBlue-sun {
     border-radius: 300px;
     width: 500px;
     height: 500px;
@@ -217,6 +250,163 @@ a {
     top: 10%;
     left: 10%;
 }
+
+/*
+* fullRed-section
+*/
+
+#fullRed-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #b62730;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: redGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.fullRed-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #ff2525;
+    top: 10%;
+    left: 10%;
+}
+
+/*
+* fullRed-section
+*/
+
+#blueRedRed-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #b62730;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: blueGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.blueRedRed-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #ff2525;
+    top: 10%;
+    left: 10%;
+}
+
+/*
+*blueRedRed
+*/
+
+#blueBlueRed-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #138eff;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: blueGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.blueBlueRed-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #ff2525;
+    top: 10%;
+    left: 10%;
+}
+
+/*
+* redBlueRed-section
+*/
+
+#redBlueRed-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #138eff;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: redGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.redBlueRed-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #ff2525;
+    top: 10%;
+    left: 10%;
+}
+
+/*
+* blueRedBlue-section
+*/
+
+#blueRedBlue-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #b62730;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: blueGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.blueRedBlue-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #4053ff;
+    top: 10%;
+    left: 10%;
+}
+
+/*
+*redBlueBlue-section
+*/
+
+#redBlueBlue-sun {
+    border-radius: 300px;
+    width: 500px;
+    height: 500px;
+    background-color: #138eff;
+    position: relative;
+    left: 50%;
+    box-shadow: 10px 10px 5px #888888;
+    animation: redGlow 4s infinite ease;
+    animation-fill-mode: forwards;
+    left: 450px;
+
+}
+
+.redBlueBlue-layer1 {
+    width: 400px;
+    height: 400px;
+    background-color: #4053ff;
+    top: 10%;
+    left: 10%;
+}
+
 
 /*
 * glowing
