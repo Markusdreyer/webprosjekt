@@ -1,5 +1,37 @@
 body {
     background-color: rgb(106, 219, 59);
+    overflow: hidden;
+}
+
+#frontpage-background {
+    position: absolute;
+    left: 15%;
+    width: 1000px;
+}
+
+#barn {
+    position: absolute;
+    left: 60%;
+    bottom: 10%;
+    width: 200px;
+}
+
+#barn:hover {
+    animation: barnOpen 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes barnOpen {
+    0% {
+        width: 200px;
+        left: 60%;
+        bottom: 10%
+    }
+    100% {
+        width: 3000px;
+        left: -30%;
+        bottom: 0;
+    }
 }
 
 #selector {
@@ -10,13 +42,12 @@ body {
 }
 
 /*
-* finn en løsning på å velge en id innenfor spesifikk ta, slik som nedenfor
+* finn en løsning på å velge en id innenfor spesifikk tag, slik som nedenfor
 */
 
 #home-btn {
     background-color: grey;
     display: inline;
-
     border-width: medium;
     border-style: groove;
 
