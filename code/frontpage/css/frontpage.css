@@ -15,8 +15,12 @@ html, body {
 
 .grass {
 position: absolute;
-width: 100%;
+width: 200px;
 bottom: 0px;
+margin: 0;
+height: 100px;
+background: rgb(59, 158, 64);
+border-radius: 50%;
 
 }
 
