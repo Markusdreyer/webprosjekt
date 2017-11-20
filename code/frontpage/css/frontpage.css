@@ -8,15 +8,13 @@ html, body {
 .container {
   position: relative;
   max-width: 100%;
-  height: auto;
-  width: auto;
+  height: 720px;
   overflow: hidden;
   margin: auto;
   padding: 1000px;
 }
 
 .grass {
-display: inline-block;
 position: absolute;
 width: 500px;
 top: 50%;
