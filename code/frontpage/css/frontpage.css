@@ -23,7 +23,7 @@ overflow: hidden;
 
 .sun {
     position: absolute;
-    top: -100px;
+    top: 100px;
     left: 50px;
     margin: 0;
     padding: 0;
@@ -60,4 +60,19 @@ overflow: hidden;
 }
 .sun li:nth-child(4){
     transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+@keyframes animate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
 }
