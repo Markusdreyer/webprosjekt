@@ -11,6 +11,8 @@ html, body {
   height: auto;
   width: auto;
   overflow: hidden;
+  margin: auto;
+  padding: inherit;
 }
 
 .grass {
