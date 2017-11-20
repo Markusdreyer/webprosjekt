@@ -62,34 +62,45 @@ body {
 #customize-container {
     left: 120px;
     top: 70px;
-    width: 300px;
-    height: 400px;
-    background-color: #452424;
+    width: 400px;
+    height: 500px;
+    background-color: #99a3be;
     position: absolute;
+    border-radius: 10px;
+    border: 4px solid black;
 }
 
 #color-container {
-    width: 300px;
+    width: 359px;
     height: 133px;
-    background-color: white;
     text-align: center;
     position: relative;
+    margin: 20px;
+    background-color: #5d5f78;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 #capacity-container {
     text-align: center;
-    width: 300px;
-    height: 133px;
-    background-color: white;
+    width: 359px;
+    height: 140px;
     position: relative;
+    margin: 20px;
+    background-color: #5d5f78;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 #speed-container {
     text-align: center;
-    width: 300px;
+    width: 359px;
     height: 133px;
-    background-color: white;
     position: relative;
+    margin: 20px;
+    background-color: #5d5f78;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 
 /*
@@ -109,34 +120,39 @@ body {
 }
 
 .knapp1:hover, .knapp2:hover, .knapp3:hover, .knapp4:hover, .knapp5:hover, .knapp6:hover, .knapp7:hover, .knapp8:hover, .knapp9:hover{
-    background-color: white;
+    background-color: #91d9f7;
 }
 
 .knapp1 {
     left: 20%;
-    background-color: brown;
+    background-color: #fffff0;
 }
 
 .knapp2 {
     left: 40%;
-    background-color: black;
+    background-color: #724d2b;
 }
 
 .knapp3 {
     left: 60%;
-    background-color: blue;
+    background-color: #262626;
 }
 
 .knapp4 {
     left: 20%;
+    padding: 0.5rem;
+    bottom: 18px;
 }
 
 .knapp5 {
     left: 40%;
+    padding: 0.8rem;
+    bottom: 15px;
 }
 
 .knapp6 {
     left: 60%;
+    padding: 1.2rem;
 }
 
 .knapp7 {
