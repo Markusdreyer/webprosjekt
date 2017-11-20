@@ -11,18 +11,16 @@ html, body {
   height: auto;
   width: auto;
   overflow: hidden;
-  margin: auto;
-  padding: 1px;
 }
 
 .grass {
-display: inline-block;
+  overflow: visible;
 position: absolute;
 width: 200px;
 bottom: 0px;
 margin: 0;
-height: 200px;
-background: #228B22;
+height: 100px;
+background: 35964e;
 border-radius: 50%;
 
 }
