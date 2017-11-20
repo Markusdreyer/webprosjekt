@@ -1,0 +1,156 @@
+body {
+    background-image: url("/Users/markusdreyer/Documents/Skole/webprosjekt/resources/images/123213213213213123213123.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*
+*    unused overlay-effect
+*/
+#overlay {
+    height: auto;
+    width: auto;
+    background-color: black;
+    opacity: 0.5;
+    position: relative;
+    z-index: -1;
+
+}
+
+/*
+*    stage-section
+*/
+
+#stage {
+    width: 400px;
+    height: 500px;
+    background-color: #ababab;
+    opacity: 0.4;
+    left: 700px;
+    bottom: 70px;
+    position: absolute;
+    overflow: hidden;
+}
+
+#shadow {
+    width: 400px;
+    height: 70px;
+    border-radius: 60%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    opacity: 1;
+    z-index: 1;
+}
+
+#spotlight {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 500px 200px;
+    border-color: transparent transparent #f7ff00 transparent;
+    bottom: 38px;
+    position: absolute;
+    z-index: 0;
+}
+
+/*
+*    customize-container-section
+*/
+
+#customize-container {
+    left: 120px;
+    top: 70px;
+    width: 300px;
+    height: 400px;
+    background-color: #452424;
+    position: absolute;
+}
+
+#color-container {
+    width: 300px;
+    height: 133px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+}
+
+#capacity-container {
+    text-align: center;
+    width: 300px;
+    height: 133px;
+    background-color: white;
+    position: relative;
+}
+
+#speed-container {
+    text-align: center;
+    width: 300px;
+    height: 133px;
+    background-color: white;
+    position: relative;
+}
+
+/*
+*    button-section
+*    fix % left
+*/
+
+.button {
+    position: absolute;
+    background-color: red;
+    padding: 1rem;
+    border-radius: 200px;
+    height: 0.5px;
+    width: 0.5px;
+    border: 0.3rem solid black;
+
+}
+
+.knapp1:hover, .knapp2:hover, .knapp3:hover, .knapp4:hover, .knapp5:hover, .knapp6:hover, .knapp7:hover, .knapp8:hover, .knapp9:hover{
+    background-color: white;
+}
+
+.knapp1 {
+    left: 20%;
+    background-color: brown;
+}
+
+.knapp2 {
+    left: 40%;
+    background-color: black;
+}
+
+.knapp3 {
+    left: 60%;
+    background-color: blue;
+}
+
+.knapp4 {
+    left: 20%;
+}
+
+.knapp5 {
+    left: 40%;
+}
+
+.knapp6 {
+    left: 60%;
+}
+
+.knapp7 {
+    left: 20%;
+}
+
+.knapp8 {
+    left: 40%;
+}
+
+.knapp9 {
+    left: 60%;
+}
+
+/*
+*    button-section end
+*/
