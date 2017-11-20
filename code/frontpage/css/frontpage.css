@@ -13,3 +13,11 @@ padding: 0;
   background-color: skyblue;
 
 }
+
+.grass {
+position: absolute;
+width: 100%;
+bottom: 0px; 
+overflow: hidden;
+
+}
