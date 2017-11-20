@@ -22,7 +22,7 @@ overflow: hidden;
 }
 
 .sun {
-    position: absolute;
+    position: flexed;
     top: 100px;
     left: 50px;
     margin: 0;
