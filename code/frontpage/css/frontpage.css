@@ -1,5 +1,15 @@
 html, body {
 margin: 0;
 padding: 0;
-  
+
+}
+
+.container {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  overflow: hidden;
+  background-color: skyblue;
+
 }
