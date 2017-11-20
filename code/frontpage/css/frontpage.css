@@ -14,7 +14,7 @@ html, body {
 }
 
 .grass {
-  overflow: visible!important;
+display: inline-block;
 position: absolute;
 width: 200px;
 bottom: 0px;
