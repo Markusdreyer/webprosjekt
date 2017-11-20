@@ -45,22 +45,25 @@ img {
   position: absolute;
   bottom: -200px;
   left: 42%;
-  transform: scale(3.3);
+  transform: scale(4.3);
   z-index: 4;
+  animation: animate 20s linear infinite;
 }
 #planet-2 {
   position: absolute;
   bottom: -200px;
   left: 10px;
-  transform: scale(2.3);
+  transform: scale(3.3);
   z-index: 2;
+  animation: animate 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
   bottom: -200px;
   right: 10px;
-  transform: scale(2.3);
+  transform: scale(3.3);
   z-index: 3;
+  animation: animate 20s linear infinite;
 }
 
 
