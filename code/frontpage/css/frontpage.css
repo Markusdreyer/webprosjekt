@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  width: 100%;
   padding: 0;
   background-color: #87CEEB;
 
@@ -8,19 +9,32 @@ html, body {
 .container {
   position: relative;
   max-width: 100%;
-  height: auto;
-  width: auto;
+  height: 720px;
   overflow: hidden;
+<<<<<<< HEAD
 }
 
 .grass {
   overflow: visible;
+=======
+  margin: auto;
+  padding: 1000px;
+}
+
+.grass {
+>>>>>>> cc43703d76a132b3d6c42f837e19164292a34432
 position: absolute;
-width: 200px;
-bottom: 0px;
+width: 500px;
+top: 50%;
+left: 50%;
 margin: 0;
+<<<<<<< HEAD
 height: 100px;
 background: 35964e;
+=======
+height: 500px;
+background: #228B22;
+>>>>>>> cc43703d76a132b3d6c42f837e19164292a34432
 border-radius: 50%;
 
 }
