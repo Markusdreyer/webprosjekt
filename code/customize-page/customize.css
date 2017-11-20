@@ -16,11 +16,11 @@ body {
 */
 
 #overlay {
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     background-color: black;
     opacity: 0.5;
-    position: relative;
+    position: fixed;
     z-index: -1;
 
 }
@@ -59,7 +59,7 @@ body {
     border-color: transparent transparent #f7ff00 transparent;
     bottom: 38px;
     position: absolute;
-    z-index: 0;
+
 }
 
 /*
