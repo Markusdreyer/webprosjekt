@@ -20,3 +20,44 @@ bottom: 0px;
 overflow: hidden;
 
 }
+
+.sun {
+    position: absolute;
+    top: -100px;
+    left: 50px;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    z-index: 1;
+    animation: animate 20s linear infinite;
+
+}
+
+.sun li {
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    width: 140px;
+    height: 3px;
+    background: yellow;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+}
+
+.sun li:nth-child(1){
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+.sun li:nth-child(2){
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+.sun li:nth-child(3){
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.sun li:nth-child(4){
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
