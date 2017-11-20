@@ -18,8 +18,9 @@ html, body {
 .grass {
 display: inline-block;
 position: absolute;
+left: 50%;
 width: 200px;
-bottom: 500px;
+bottom: -50px;
 margin: 0;
 height: 200px;
 background: #228B22;
