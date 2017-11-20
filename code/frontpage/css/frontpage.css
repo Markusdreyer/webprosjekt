@@ -31,7 +31,7 @@ left: 50px;
 
 
 .sun {
-    position: flexed;
+    position: absolute;
     top: 100px;
     left: 50px;
     margin: 0;
