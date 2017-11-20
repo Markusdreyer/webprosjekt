@@ -1,6 +1,7 @@
 html, body {
-margin: 0;
-padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #87CEEB;
 
 }
 
@@ -10,14 +11,12 @@ padding: 0;
   height: auto;
   width: auto;
   overflow: hidden;
-  background-color: skyblue;
-
 }
 
 .grass {
 position: absolute;
 width: 100%;
-bottom: 0px; 
+bottom: 0px;
 overflow: hidden;
 
 }
