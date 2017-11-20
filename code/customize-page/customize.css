@@ -5,9 +5,16 @@ body {
     overflow: hidden;
 }
 
+#placeholder {
+    position: absolute;
+    left: 53%;
+    top: 53%;
+}
+
 /*
 *    unused overlay-effect
 */
+
 #overlay {
     height: auto;
     width: auto;
