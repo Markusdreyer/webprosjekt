@@ -18,7 +18,7 @@ html, body {
 position: absolute;
 left: 50%;
 width: 500px;
-top: -50px;
+top: -20px;
 margin: 0;
 height: 500px;
 background: #228B22;
@@ -26,21 +26,37 @@ border-radius: 50%;
 
 }
 
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
 .sign {
-position: absolute;
-width: 30px;
-bottom: 50px;
-left: 50px;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.birds {
+    position: absolute;
+    transform: scale(0.2);
+    left: -3500px;
+    top: -500px;
 }
 
 .sun {
     position: absolute;
     top: 100px;
-    left: 50px;
+    left: 100px;
     margin: 0;
     padding: 0;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     background: #ffff00;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(255, 255, 8, .5);
@@ -51,10 +67,10 @@ left: 50px;
 .sun li {
     list-style: none;
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 100px;
+    left: 100px;
     transform: translate(-50%, -50%);
-    width: 140px;
+    width: 280px;
     height: 3px;
     background: #ffff00;
     box-shadow: 0 0 15px rgba(255, 255, 8, .5);
