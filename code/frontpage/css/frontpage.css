@@ -34,6 +34,9 @@ border-radius: 50%;
     z-index: 1;
 }
 
+.barn {
+  position: absolute;
+}
 .sign {
   position: absolute;
   top: 20%;
