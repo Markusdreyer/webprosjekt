@@ -14,12 +14,19 @@ html, body {
 }
 
 .grass {
-  overflow: visible;
+overflow: visible;
 position: absolute;
+<<<<<<< HEAD
 left: 50%;
 width: 500px;
 top: -20px;
 margin: 0;
+=======
+left: 400px;
+width: 600px;
+top: -300px;
+margin: auto;
+>>>>>>> 7886ab464b507df3b3bfb616c86a1bce7164e979
 height: 500px;
 background: #228B22;
 border-radius: 50%;
