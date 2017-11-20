@@ -6,14 +6,11 @@ html, body {
 }
 
 .container {
-  position: relative;
-  max-width: 50%;
-  height: auto;
-  width: auto;
+  position: fixed;
+  height: 100%;
+  width: 100%;
   overflow: hidden;
-  margin: auto;
-  padding: 1000px;
-  background-color: #87CEEB;
+  backgroud-color: #87CEEB;
 }
 
 .grass {
