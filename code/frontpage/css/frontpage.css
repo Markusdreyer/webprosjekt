@@ -14,12 +14,12 @@ html, body {
 }
 
 .grass {
-  overflow: visible;
+overflow: visible;
 position: absolute;
-left: 50%;
+left: 400px;
 width: 600px;
-top: -50px;
-margin: 0;
+top: -300px;
+margin: auto;
 height: 500px;
 background: #228B22;
 border-radius: 50%;
