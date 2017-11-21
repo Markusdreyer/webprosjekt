@@ -43,27 +43,27 @@ img {
 
 #planet-1 {
   position: absolute;
-  bottom: -200px;
-  left: 42%;
-  transform: scale(4.3);
+  bottom: -400px;
+  left: 26%;
+  width: 900px;
   z-index: 4;
-  animation: animate 20s linear infinite;
+  animation: rotate 40s linear infinite;
 }
 #planet-2 {
   position: absolute;
-  bottom: -200px;
-  left: 10px;
-  transform: scale(3.3);
+  bottom: -300px;
+  left: 3px;
+  width: 650px;
   z-index: 2;
-  animation: animate 20s linear infinite;
+  animation: rotate1 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
-  bottom: -200px;
-  right: 10px;
-  transform: scale(3.3);
+  bottom: -300px;
+  right: 5px;
+  width: 650px;
   z-index: 3;
-  animation: animate 20s linear infinite;
+  animation: rotate1 20s linear infinite;
 }
 
 
@@ -137,6 +137,7 @@ img {
     }
 }
 
+<<<<<<< HEAD
 
 
 
@@ -192,5 +193,35 @@ img {
     left: -40%;
     transform: rotateY( 0deg);
 
+=======
+@keyframes rotate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(180deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+
+}
+
+@keyframes rotate1 {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(-180deg);
+  }
+  100%
+  {
+    transform: rotate(-360deg);
+>>>>>>> 6f9840ee02f7301106cbeb275a5ce7541a924153
   }
 }
