@@ -137,38 +137,6 @@ img {
     }
 }
 
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @keyframes fly {
   0% {
     left: -40%;
@@ -193,35 +161,5 @@ img {
     left: -40%;
     transform: rotateY( 0deg);
 
-=======
-@keyframes rotate {
-  0%
-  {
-    transform: rotate(0deg);
-  }
-  50%
-  {
-    transform: rotate(180deg);
-  }
-  100%
-  {
-    transform: rotate(360deg);
-  }
-
-}
-
-@keyframes rotate1 {
-  0%
-  {
-    transform: rotate(0deg);
-  }
-  50%
-  {
-    transform: rotate(-180deg);
-  }
-  100%
-  {
-    transform: rotate(-360deg);
->>>>>>> 6f9840ee02f7301106cbeb275a5ce7541a924153
   }
 }
