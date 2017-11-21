@@ -7,7 +7,7 @@ html, body {
 }
 
 
-..container {
+.container {
   position: fixed;
   margin: auto;
   top: 0;
@@ -29,25 +29,25 @@ z-index: 5;
 
 #planet-1 {
   position: absolute;
-  bottom: -700px;
+  bottom: -750px;
   left: 24%;
-  width: 900px;
+  width: 1000px;
   z-index: 4;
 
 }
 #planet-2 {
   position: absolute;
-  bottom: -700px;
+  bottom: -750px;
   right: 800px;
-  width: 850px;
+  width: 950px;
   z-index: 2;
   animation: rotate1 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
-  bottom: -700px;
+  bottom: -750px;
   left: 800px;
-  width: 850px;
+  width: 950px;
   z-index: 3;
   animation: rotate 20s linear infinite;
 }
