@@ -7,7 +7,7 @@ html, body {
 }
 
 
-.container {
+..container {
   position: fixed;
   margin: auto;
   top: 0;
@@ -19,7 +19,7 @@ html, body {
   overflow: hidden;
 }
 
-.sheep1 {
+#sheep1 {
 position: absolute;
 bottom: 50px;
 left: 700px;
