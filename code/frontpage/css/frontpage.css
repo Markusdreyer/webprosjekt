@@ -81,6 +81,7 @@ img {
   left: 0;
   width: 400px;
   animation: fly 30s linear infinite;
+  z-index: 1;
 }
 
 .sun {
