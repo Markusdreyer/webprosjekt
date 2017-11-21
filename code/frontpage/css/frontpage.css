@@ -77,9 +77,10 @@ img {
 
 #birds {
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: scale(0.5);
+  top: 5%;
+  left: 0;
+  width: 400px;
+  animation: fly 30s linear in;
 }
 
 .sun {
@@ -121,7 +122,6 @@ img {
 .sun li:nth-child(4){
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
 @keyframes animate {
     0%
     {
@@ -135,4 +135,62 @@ img {
     {
         transform: rotate(360deg);
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fly {
+  0% {
+    left: -40%;
+  }
+  20% {
+    left: 100%;
+    transform: rotateY( 0deg);
+  }
+  40% {
+    left: 100%;
+    transform: rotateY( 180deg);
+  }
+  60% {
+    left: 100%;
+    transform: rotateY( 180deg);
+  }
+  80% {
+    left: -40%;
+    transform: rotateY( 180deg);
+  }
+  100% {
+    left: -40%;
+    transform: rotateY( 0deg);
+
+  }
 }
