@@ -47,7 +47,7 @@ img {
   left: 28%;
   width: 900px;
   z-index: 4;
-  animation: animate 20s linear infinite;
+  animation: rotate 40s linear infinite;
 }
 #planet-2 {
   position: absolute;
@@ -55,7 +55,7 @@ img {
   left: 3px;
   width: 650px;
   z-index: 2;
-  animation: animate 20s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
@@ -63,7 +63,7 @@ img {
   right: 5px;
   width: 650px;
   z-index: 3;
-  animation: animate 20s linear infinite;
+  animation: rotate 20s linear infinite;
 }
 
 
@@ -135,4 +135,20 @@ img {
     {
         transform: rotate(360deg);
     }
+}
+
+@keyframes rotate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  50%
+  {
+    transform: rotate(180deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+
 }
