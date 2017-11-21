@@ -6,7 +6,7 @@ body {
     background-image: url("images/123213213213213123213123.png");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;  
+    overflow: hidden;
 }
 
 h1 {
@@ -262,3 +262,12 @@ h1 {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4a4a4a, 0 0 170px #4a4a4a, 0 0 180px #4a4a4a, 0 0 200px #4a4a4a, 0 0 350px #4a4a4a;
   }
 }
+
+.speedometer{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  left:500px;
+  position: absolute;
+}
+.#-1{}
