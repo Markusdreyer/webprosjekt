@@ -1,8 +1,10 @@
 html, body {
   margin: 0;
   padding: 0;
-
-
+  background-color: #87CEEB;
+  background: : url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img {
@@ -20,7 +22,6 @@ img {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  background-color: #87CEEB;
 
 }
 
@@ -81,6 +82,7 @@ img {
   left: 0;
   width: 400px;
   animation: fly 30s linear infinite;
+  z-index: 1;
 }
 
 .sun {
