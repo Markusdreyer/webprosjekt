@@ -37,6 +37,7 @@ h1 {
     background-color: black;
     margin: -10px;
     opacity: 0.5;
+    top:0px;
     position: fixed;
     z-index: -1;
 
@@ -49,9 +50,9 @@ h1 {
 #stage {
     width: 400px;
     height: 500px;
-    left: 700px;
-    bottom: 70px;
-    position: absolute;
+    left: 691px;
+    top: 216px;
+    position:relative;
     overflow: hidden;
 }
 
