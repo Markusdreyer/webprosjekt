@@ -77,9 +77,10 @@ img {
 
 #birds {
   position: absolute;
-  top: 50%;
-  left: 40%;
-  transform: scale(0.5);
+  top: 5%;
+  left: 0;
+  width: 400px;
+  animation: fly 30s linear infinite;
 }
 
 .sun {
@@ -93,7 +94,7 @@ img {
     background: #ffff00;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(255, 255, 8, .5);
-    animation: animate 20s linear infinite;
+    animation: rotate 20s linear infinite;
 
 }
 
@@ -121,8 +122,7 @@ img {
 .sun li:nth-child(4){
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-
-@keyframes animate {
+@keyframes rotate {
     0%
     {
         transform: rotate(0deg);
@@ -137,33 +137,41 @@ img {
     }
 }
 
-@keyframes rotate {
-  0%
-  {
-    transform: rotate(0deg);
-  }
-  50%
-  {
-    transform: rotate(180deg);
-  }
-  100%
-  {
-    transform: rotate(360deg);
-  }
-
-}
-
 @keyframes rotate1 {
-  0%
-  {
-    transform: rotate(0deg);
-  }
-  50%
-  {
+   0% {
+     transform: rotate(0deg);
+    }
+   50% {
     transform: rotate(-180deg);
+   }
+   100% {
+     transform: rotate(-360deg);
+   }
+ }
+
+@keyframes fly {
+  0% {
+    left: -40%;
   }
-  100%
-  {
-    transform: rotate(-360deg);
+  20% {
+    left: 100%;
+    transform: rotateY( 0deg);
+  }
+  40% {
+    left: 100%;
+    transform: rotateY( 180deg);
+  }
+  60% {
+    left: 100%;
+    transform: rotateY( 180deg);
+  }
+  80% {
+    left: -40%;
+    transform: rotateY( 180deg);
+  }
+  100% {
+    left: -40%;
+    transform: rotateY( 0deg);
+
   }
 }
