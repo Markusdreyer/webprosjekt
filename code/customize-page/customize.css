@@ -105,7 +105,43 @@ body {
     border-radius: 10px;
     border: 3px solid black;
 }
+/*
+* Info box for capacity
+*/
 
+#info-box-text{
+  position: absolute;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 200px;
+  height: 0.5px;
+  width: 0.5px;
+  left: 330px;
+  top: 10px;
+  border: 0.3rem solid black;
+
+}
+
+#info-text
+{
+  position: absolute;
+  text-align: left;
+  width: 212px;
+  height: 120px;
+  left: 400px;
+  padding: 0.5rem;
+  bottom: 10px;
+  background-color: white;
+  border: 0.3rem solid yellow;
+  border-radius: 0.5rem;
+  display: none;
+}
+#info-box-text:hover ~ #info-text{
+  display: block;
+}
+/*
+* info box for capacity end
+*/
 #speed-container {
     text-align: center;
     width: 359px;
