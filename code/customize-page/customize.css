@@ -109,7 +109,7 @@ body {
 * Info box for capacity
 */
 
-#info-box-text{
+#info-box{
   position: absolute;
   background-color: white;
   padding: 0.4rem;
@@ -136,7 +136,7 @@ body {
   border-radius: 0.5rem;
   display: none;
 }
-#info-box-text:hover ~ #info-text{
+#info-box:hover ~ #info-text{
   display: block;
 }
 /*
