@@ -41,7 +41,7 @@ z-index: 5;
   right: 800px;
   width: 950px;
   z-index: 2;
-  animation: rotate1 20s linear infinite;
+  animation: rotate2 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
@@ -49,10 +49,35 @@ z-index: 5;
   left: 800px;
   width: 950px;
   z-index: 3;
-  animation: rotate 20s linear infinite;
+  animation: rotate1 20s linear infinite;
 }
 
-@keyframes rotate {
+.sun {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    background: #ffff00;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    animation: animate 20s linear infinite;
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+   }
+  50% {
+   transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
    0% {
      transform: rotate(0deg);
     }
@@ -65,7 +90,7 @@ z-index: 5;
  }
 
 
-@keyframes rotate1 {
+@keyframes rotate2 {
    0% {
      transform: rotate(0deg);
     }
