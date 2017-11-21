@@ -1,8 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #87CEEB;
-  background: : url("images/background.png");
+  background: url("../images/background.png") center center fixed #87CEEB;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -22,7 +21,6 @@ img {
   height: 100%;
   width: 100%;
   overflow: hidden;
-
 }
 
 #logo {
