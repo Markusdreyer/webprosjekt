@@ -5,7 +5,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-}
+
 
 .container {
   position: fixed;
@@ -19,32 +19,65 @@ html, body {
   overflow: hidden;
 }
 
+#sheep1 {
+position: absolute;
+bottom: 50px;
+left: 700px;
+width: 150px;
+z-index: 5;
+}
+
 #planet-1 {
   position: absolute;
-  bottom: -400px;
-  left: 26%;
-  width: 900px;
+  bottom: -750px;
+  left: 24%;
+  width: 1000px;
   z-index: 4;
 
 }
 #planet-2 {
   position: absolute;
-  bottom: -300px;
-  left: 3px;
-  width: 650px;
+  bottom: -750px;
+  right: 800px;
+  width: 950px;
   z-index: 2;
-  animation: rotate1 20s linear infinite;
+  animation: rotate2 20s linear infinite;
 }
 #planet-3 {
   position: absolute;
-  bottom: -300px;
-  right: 5px;
-  width: 650px;
+  bottom: -750px;
+  left: 800px;
+  width: 950px;
   z-index: 3;
   animation: rotate1 20s linear infinite;
 }
 
-@keyframes rotate {
+.sun {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    height: 200px;
+    background: #ffff00;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
+    animation: animate 20s linear infinite;
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+   }
+  50% {
+   transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate1 {
    0% {
      transform: rotate(0deg);
     }
@@ -57,7 +90,7 @@ html, body {
  }
 
 
-@keyframes rotate1 {
+@keyframes rotate2 {
    0% {
      transform: rotate(0deg);
     }
