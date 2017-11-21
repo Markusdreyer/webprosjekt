@@ -62,7 +62,7 @@ h1 {
     background-color: black;
     position: absolute;
     bottom: 0;
-    opacity: 0.8;
+    opacity: 1;
     z-index: 1;
 }
 
@@ -76,7 +76,13 @@ h1 {
     opacity: 0.6;
     position: absolute;
     z-index: 0;
-
+}
+#lamp{
+  position: absolute;
+  z-index: -1;
+  left: 823px;
+  top: 139px;
+  width: 150px;
 }
 
 /*
@@ -113,7 +119,43 @@ h1 {
     background-color: #5b5b5b;
     border-radius: 13px;
 }
+/*
+* Info box for capacity
+*/
 
+#info-box-text{
+  position: absolute;
+  background-color: white;
+  padding: 0.4rem;
+  border-radius: 200px;
+  height: 0.5px;
+  width: 0.5px;
+  left: 330px;
+  top: 10px;
+  border: 0.3rem solid black;
+
+}
+
+#info-text
+{
+  position: absolute;
+  text-align: left;
+  width: 212px;
+  height: 120px;
+  left: 400px;
+  padding: 0.5rem;
+  bottom: 10px;
+  background-color: white;
+  border: 0.3rem solid yellow;
+  border-radius: 0.5rem;
+  display: none;
+}
+#info-box-text:hover ~ #info-text{
+  display: block;
+}
+/*
+* info box for capacity end
+*/
 #speed-container {
     text-align: center;
     width: 230px;
