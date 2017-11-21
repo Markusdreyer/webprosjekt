@@ -80,7 +80,7 @@ img {
   top: 5%;
   left: 0;
   width: 400px;
-  animation: fly 30s linear in;
+  animation: fly 30s linear infinite;
 }
 
 .sun {
@@ -94,7 +94,7 @@ img {
     background: #ffff00;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(255, 255, 8, .5);
-    animation: animate 20s linear infinite;
+    animation: rotate 20s linear infinite;
 
 }
 
@@ -122,7 +122,7 @@ img {
 .sun li:nth-child(4){
     transform: translate(-50%, -50%) rotate(-45deg);
 }
-@keyframes animate {
+@keyframes rotate {
     0%
     {
         transform: rotate(0deg);
@@ -136,6 +136,18 @@ img {
         transform: rotate(360deg);
     }
 }
+
+@keyframes rotate1 {
+   0% {
+     transform: rotate(0deg);
+    }
+   50% {
+    transform: rotate(-180deg);
+   }
+   100% {
+     transform: rotate(-360deg);
+   }
+ }
 
 @keyframes fly {
   0% {
