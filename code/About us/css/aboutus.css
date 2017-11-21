@@ -25,7 +25,7 @@ html, body {
   left: 26%;
   width: 900px;
   z-index: 4;
-  animation: rotate 40s linear infinite;
+
 }
 #planet-2 {
   position: absolute;
