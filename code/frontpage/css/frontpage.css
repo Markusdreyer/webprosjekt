@@ -40,8 +40,21 @@ html, body {
   transform: rotate(-12deg);
   bottom: -40rem;
   left: 97rem;
-
+  z-index: 1;
 }
+#barnglow {
+  display: none;
+  position: absolute;
+  width: 200px;
+  transform: rotate(-12deg);
+  bottom: -40rem;
+  left: 97rem;
+  z-index: 2;
+}
+#barn:hover > #barnglow {
+  display: block;
+}
+
 
 #windmill {
   position: absolute;
