@@ -65,8 +65,8 @@ html, body {
 }
 #wings{
   position: absolute;
-  left: 8.6rem;
-  bottom: -50rem;
+  left: 5.9rem;
+  bottom: -48rem;
   z-index: 1;
   animation: rotate1 3s linear infinite;
 }
@@ -121,9 +121,10 @@ html, body {
 
 #sign {
   position: absolute;
-  bottom: -52rem;
-  left: 10rem;
-  width: 150px;
+  bottom: -53rem;
+  transform: rotate(-4deg);
+  left: 12rem;
+  width: 250px;
   z-index: 6;
 }
 
