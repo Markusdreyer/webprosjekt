@@ -6,7 +6,7 @@ html, body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top fixed;
   position: absolute;
   height: 100vh;
   width: 100%;
@@ -39,6 +39,23 @@ html, body {
 
 }
 
+#windmill {
+  position: absolute;
+  transform: scale(0.3);
+  bottom: -20rem;
+  left: 10rem;
+  z-index: 5;
+}
+#wings{
+  position: absolute;
+  left: 8.6rem;
+  bottom: -50rem;
+  z-index: 1;
+  animation: rotate1 3s linear infinite;
+}
+#house{
+  position: absolute;
+}
 
 #sheep1{
   position: absolute;
@@ -51,14 +68,14 @@ html, body {
   position: absolute;
   width: 100px;
   bottom: -40rem;
-  left: 20rem;
+  left: 25rem;
 }
 #sheep3{
   position: absolute;
-  width: 100px;
-  bottom: -45rem;
-  left: 90rem;
-  transform: rotateY( 180deg);
+  width: 140px;
+  bottom: -52rem;
+  left: 100rem;
+  z-index: 6;
 }
 
 #planet-1 {
@@ -74,7 +91,6 @@ html, body {
   left: -10rem;
   width: 1000px;
   z-index: 2;
-  animation: rotate1 50s linear infinite;
 }
 #planet-3 {
   position: absolute;
@@ -82,15 +98,15 @@ html, body {
   left: 70rem;
   width: 1000px;
   z-index: 3;
-  animation: rotate1 50s linear infinite;
+  animation: rotate 70s linear infinite;
 }
 
 
 #sign {
   position: absolute;
-  bottom: -40rem;
-  left: 7rem;
-  width: 100px;
+  bottom: -52rem;
+  left: 10rem;
+  width: 150px;
   z-index: 6;
 }
 
@@ -113,21 +129,24 @@ html, body {
     padding: 0;
     width: 200px;
     height: 200px;
-    background: #ffff00;
+    background: #FFFF66	;
     border-radius: 50%;
     box-shadow: 0px 0px 40px 15px yellow;
-    animation: glow 10s linear infinite;
+    animation: glow 40s linear infinite;
 }
 
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
+    background: #FFFF66	;
   }
   50% {
-    box-shadow: 0px 0px 60px 30px orange;
+    box-shadow: 0px 0px 60px 30px #FFFF66;
+    background: yellow;
   }
   100% {
-    box-shadow: 0px 0px 40px 15px orange;
+    box-shadow: 0px 0px 40px 15px yellow;
+    background: #FFFF66	;
   }
 }
 
