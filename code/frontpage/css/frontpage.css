@@ -1,40 +1,40 @@
 html, body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  background: url("../images/background.png") center center fixed #87CEEB;
+  background: url("../images/background.png");
+  background-color: #87CEEB;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-img {
-    display: block;
-    margin: 0 auto;
+  background-position: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .container {
-  position: fixed;
+  position: relative;
+  display: inline-block;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
 
 #logo {
     position: absolute;
-    top: 5%;
-    left: 40%;
+    bottom: -20rem;
+    left: 47rem;
 
 }
 
 #barn {
   position: absolute;
-  top: 45%;
   transform: scale(0.5);
-  left: 30%;
+  bottom: -47rem;
+  left: 100rem;
   z-index: 5;
 
 }
@@ -43,44 +43,43 @@ img {
 #sheep1{
   position: absolute;
   width: 300px;
-  bottom: 25%;
-  left: 40%;
+  bottom: -50rem;
+  left: 47rem;
+  z-index: 5;
 }
 #sheep2{
   position: absolute;
   width: 100px;
-  bottom: 35%;
-  left: 15%;
+  bottom: -40rem;
+  left: 20rem;
 }
 #sheep3{
   position: absolute;
   width: 100px;
-  bottom: 35%;
-  right: 15%;
+  bottom: -45rem;
+  left: 90rem;
   transform: rotateY( 180deg);
 }
 
-
 #planet-1 {
   position: absolute;
-  bottom: -800px;
-  left: 20%;
+  bottom: -108rem;
+  left: 30rem;
   width: 1100px;
   z-index: 4;
-  animation: rotate 70s linear infinite;
 }
 #planet-2 {
   position: absolute;
-  bottom: -750px;
-  left: 5px;
+  bottom: -108rem;
+  left: -10rem;
   width: 1000px;
   z-index: 2;
   animation: rotate1 50s linear infinite;
 }
 #planet-3 {
   position: absolute;
-  bottom: -750px;
-  right: 5px;
+  bottom: -108rem;
+  left: 70rem;
   width: 1000px;
   z-index: 3;
   animation: rotate1 50s linear infinite;
@@ -89,8 +88,8 @@ img {
 
 #sign {
   position: absolute;
-  bottom: 25%;
-  left: 5%;
+  bottom: -40rem;
+  left: 7rem;
   width: 100px;
   z-index: 6;
 }
@@ -98,8 +97,8 @@ img {
 
 #birds {
   position: absolute;
-  top: 5%;
-  left: 0;
+  bottom: -20rem;
+  left: 0rem;
   width: 400px;
   animation: fly 30s linear infinite;
   z-index: 1;
@@ -108,15 +107,14 @@ img {
 
 .sun {
     position: absolute;
-    top: 10%;
-    left: 5%;
+    bottom: -15rem;
+    left: 3rem;
     margin: 0;
     padding: 0;
     width: 200px;
     height: 200px;
     background: #ffff00;
     border-radius: 50%;
-<<<<<<< HEAD
     box-shadow: 0px 0px 40px 15px yellow;
     animation: glow 10s linear infinite;
 }
@@ -131,36 +129,8 @@ img {
   100% {
     box-shadow: 0px 0px 40px 15px orange;
   }
-=======
-    box-shadow: 0 0 15px rgba(255, 255, 8, .5);
-    animation: rotate 20s linear infinite;
->>>>>>> e2430b84192c58a3db8e8191e763eae1756e21a5
 }
 
-.sun li {
-    list-style: none;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 15px;
-    background: #ffff00;
-    box-shadow: 0 0 50px rgba(255, 255, 8, .5);
-}
-
-.sun li:nth-child(1){
-    transform: translate(-50%, -50%) rotate(0deg);
-}
-.sun li:nth-child(2){
-    transform: translate(-50%, -50%) rotate(90deg);
-}
-.sun li:nth-child(3){
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-.sun li:nth-child(4){
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
 @keyframes rotate {
     0%
     {
@@ -190,26 +160,26 @@ img {
 
 @keyframes fly {
   0% {
-    left: -40%;
+    left: -40rem;
   }
   20% {
-    left: 100%;
+    left: 120rem;
     transform: rotateY( 0deg);
   }
   40% {
-    left: 100%;
+    left: 120rem;
     transform: rotateY( 180deg);
   }
   60% {
-    left: 100%;
+    left: 120rem;
     transform: rotateY( 180deg);
   }
   80% {
-    left: -40%;
+    left: -40rem;
     transform: rotateY( 180deg);
   }
   100% {
-    left: -40%;
+    left: -40rem;
     transform: rotateY( 0deg);
   }
 }
