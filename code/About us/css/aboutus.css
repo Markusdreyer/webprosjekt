@@ -36,8 +36,8 @@ z-index: 6;
 #sheep1 {
 position: absolute;
 bottom: -55rem;
-left: 100rem;
-width: 130px;
+left: 93em;
+width: 230px;
 z-index: 5;
 }
 
@@ -45,14 +45,14 @@ z-index: 5;
 position: absolute;
 bottom: -40rem;
 left: 20rem;
-width: 200px;
+width: 150px;
 z-index: 5;
 }
 
 #sheep3 {
 position: absolute;
 bottom: -42rem;
-left: 20rem;
+left: 15rem;
 width: 120px;
 z-index: 5;
 }
@@ -80,6 +80,14 @@ z-index: 5;
   width: 950px;
   z-index: 3;
   animation: rotate1 40s linear infinite;
+}
+
+#arrow {
+  position: absolute;
+  bottom: -60rem;
+  left: 15rem;
+  width: 120px;
+  z-index: 8;
 }
 
 .sun {
