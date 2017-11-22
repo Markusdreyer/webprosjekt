@@ -10,19 +10,13 @@
 #hay-ground{
   position: absolute;
   height:1000px;
-  width:120%;
+  width:2100px;
   border-radius: 200%;
   background-color: #ccc527;
-  top:600px;
+  top:570px;
   left: -220px;
 }
-#barn{
-  position: relative;
-  width:300px;
-  left:15%;
-  bottom: 850px;
-  transform: rotate(-15deg);
-}
+
 .hay{
   position: relative;
   height: 50px;
@@ -86,9 +80,70 @@
   top:-55%;
 }
 
-.plane{
+#img-container{
   position: relative;
+  width: 100%;
+  height: 50%;
+  top: 200px;
+  z-index: -1;
+}
+
+.plane{
+  position: absolute;
+  width: 1200px;
+}
+
+.grass1{
+  top:100px;
+  left:-300px;
+  transform: rotate(10deg);
+}
+.grass2{
+  top:50px;
+  left:300px;
+  transform: rotate(-95deg);
+}
+.grass3{
+  top:120px;
+  left:850px;
+}
+.grass4{
+  top:70px;
+  left:-50px;
+  z-index:-1;
+}
+.grass5{
+  top:50px;
+  left:600px;
+  z-index:-1;
+}
+
+#barn{
+  position: absolute;
+  width:100px;
+  top:420px;
+  left: 450px;
+  transform: rotate(-10deg);
+}
+#sau-front{
+  position: absolute;
+  width: 300px;
+  top: 500px;
+  left: 650px;
+  z-index: 2;
+
+}
+#sau-back-black{
+  position: absolute;
+  left: 1200px;
+  top: 410px;
+  width: 100px;
+}
+#sau-back-brown{
+  position: absolute;
   width: 200px;
+  left: 70px;
+  top: 430px;
 }
 
 #sun {
