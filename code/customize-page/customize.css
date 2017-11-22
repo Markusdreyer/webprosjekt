@@ -25,6 +25,7 @@ h1 {
     top: 163px;
     width: 650px;
     position: absolute;
+    z-index: 1;
 }
 
 #placeholder {
@@ -65,7 +66,7 @@ h1 {
 #sheep {
     position: absolute;
     width: 400px;
-    z-index: 5;
+    z-index: 2;
     top: 180px;
 }
 
@@ -107,10 +108,11 @@ h1 {
 #machine-container {
     width: 599px;
     height: 457px;
-    left: 32px;
+    left: 33px;
     bottom: 78px;
     position: absolute;
     border-radius: 15px;
+    z-index: 2;
 }
 
 /*
@@ -169,10 +171,10 @@ h1 {
     top: -8px;
     border: 2px solid black;
     font-size: 10px;
-    line-height: 3px;
+    line-height: 2px;
     letter-spacing: 200px;
-
 }
+
 
 #info-text
 {
@@ -180,8 +182,8 @@ h1 {
   text-align: left;
   width: 212px;
   height: 80px;
-  left: 200px;
-  bottom: 190px;
+  left: 230px;
+  top: -29px;
   padding-left: 50px;
   padding-top: 9px;
   color: #fcfdfd;
@@ -192,6 +194,7 @@ h1 {
   font-family: coyote;
   line-height: 18px;
   animation: textbox-move
+  z-index: 200;
 }
 #info-box:hover ~ #info-text{
   display: block;
@@ -210,6 +213,7 @@ h1 {
     background-color: #92aaac;
     border-radius: 13px;
     border: 5px solid #5b5b5b;
+    z-index: 2;
 }
 
 /*
@@ -267,14 +271,17 @@ h1 {
 
 .knapp7 {
     left: 18%;
+    background-color: #007D8C;
 }
 
 .knapp8 {
     left: 45%;
+    background-color: #FEE907;
 }
 
 .knapp9 {
     left: 72%;
+    background-color: #CF735A;
 }
 
 /*
