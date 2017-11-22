@@ -1,16 +1,6 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-  background: url("../images/background.png");
-  background-color: #87CEEB;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top fixed;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
 }
 
 .container {
@@ -22,27 +12,41 @@ html, body {
   bottom: 0;
   left: 0;
 }
-
+.backgroundimage {
+  background: url("../images/background.png");
+  background-color: #87CEEB;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top fixed;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
 #logo {
     position: absolute;
-    bottom: -20rem;
-    left: 47rem;
+    bottom: -24rem;
+    left: 45rem;
+    width: 500px;
+    z-index: 7;
+    animation-name: intro 10s linear;
+    animation-iteration-count: 1;
 
 }
 
 #barn {
   position: absolute;
-  transform: scale(0.5);
-  bottom: -47rem;
-  left: 100rem;
-  z-index: 5;
+  width: 200px;
+  transform: rotate(-12deg);
+  bottom: -40rem;
+  left: 97rem;
 
 }
 
 #windmill {
   position: absolute;
-  transform: scale(0.3);
-  bottom: -20rem;
+  transform: scale(0.3) rotate(1deg);
+  bottom: -18.5rem;
   left: 10rem;
   z-index: 5;
 }
@@ -61,7 +65,7 @@ html, body {
   position: absolute;
   width: 300px;
   bottom: -50rem;
-  left: 47rem;
+  left: 53rem;
   z-index: 5;
 }
 #sheep2{
@@ -72,9 +76,9 @@ html, body {
 }
 #sheep3{
   position: absolute;
-  width: 140px;
+  width: 190px;
   bottom: -52rem;
-  left: 100rem;
+  left: 95rem;
   z-index: 6;
 }
 
@@ -133,6 +137,15 @@ html, body {
     border-radius: 50%;
     box-shadow: 0px 0px 40px 15px yellow;
     animation: glow 40s linear infinite;
+}
+
+@keyframes intro {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 @keyframes glow {
