@@ -22,8 +22,8 @@ h1 {
 }
 
 #machine {
-    bottom: 0;
-    width: 600px;
+    top: 163px;
+    width: 650px;
     position: absolute;
 }
 
@@ -62,11 +62,18 @@ h1 {
     overflow: hidden;
 }
 
+#sheep {
+    position: absolute;
+    width: 400px;
+    z-index: 5;
+    top: 180px;
+}
+
 #shadow {
     width: 400px;
     height: 70px;
     border-radius: 60%;
-    background-color: black;
+    background-color: #5b5b5b;
     position: absolute;
     bottom: 0;
     opacity: 1;
@@ -84,6 +91,7 @@ h1 {
     position: absolute;
     z-index: 0;
 }
+
 #lamp{
   position: absolute;
   z-index: -1;
@@ -99,8 +107,8 @@ h1 {
 #machine-container {
     width: 599px;
     height: 457px;
-    left: 8px;
-    bottom: 118px;
+    left: 32px;
+    bottom: 78px;
     position: absolute;
     border-radius: 15px;
 }
@@ -111,8 +119,8 @@ h1 {
 */
 
 #customize-container {
-    left: 315px;
-    top: 105px;
+    left: 300px;
+    top: 100px;
     width: 270px;
     height: 325px;
     background-color: #6a7e80;
@@ -171,14 +179,19 @@ h1 {
   position: absolute;
   text-align: left;
   width: 212px;
-  height: 120px;
-  left: 400px;
-  padding: 0.5rem;
-  bottom: 10px;
-  background-color: white;
-  border: 0.3rem solid yellow;
+  height: 80px;
+  left: 200px;
+  bottom: 190px;
+  padding-left: 50px;
+  padding-top: 9px;
+  color: #fcfdfd;
+  background-color: #92AAAC;
+  border: 0.3rem solid #5b5b5b;
   border-radius: 0.5rem;
   display: none;
+  font-family: coyote;
+  line-height: 18px;
+  animation: textbox-move
 }
 #info-box:hover ~ #info-text{
   display: block;
@@ -265,6 +278,18 @@ h1 {
 }
 
 /*
+*    speedometer-section
+*/
+
+.speedometer{
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  left:500px;
+  position: absolute;
+}
+
+/*
 * keyframes Start
 */
 
@@ -280,11 +305,11 @@ h1 {
   }
 }
 
-.speedometer{
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  left:500px;
-  position: absolute;
+@keyframes textbox-move {
+    0% {
+
+    }
+    100{
+
+    }
 }
-.#-1{}
