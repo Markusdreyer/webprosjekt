@@ -30,8 +30,27 @@ bottom: -50rem;
 left: 30rem;
 width: 1000px;
 height: 700px;
-z-index: 6;
+z-index: 8;
 }
+
+#windmill {
+  position: absolute;
+  transform: scale(0.3);
+  bottom: -20rem;
+  left: 100rem;
+  z-index: 7;
+}
+#wings{
+  position: absolute;
+  left: 8.6rem;
+  bottom: -50rem;
+  z-index: 1;
+  animation: rotate1 3s linear infinite;
+}
+#house{
+  position: absolute;
+}
+
 
 #sheep1 {
 position: absolute;
