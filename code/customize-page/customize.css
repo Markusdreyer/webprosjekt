@@ -109,7 +109,7 @@ h1 {
     width: 599px;
     height: 457px;
     left: 33px;
-    bottom: 78px;
+    top: 263.5px;
     position: absolute;
     border-radius: 15px;
     z-index: 2;
@@ -288,12 +288,11 @@ h1 {
 *    speedometer-section
 */
 
-.speedometer{
-  width: 20px;
-  height: 20px;
-  background-color: red;
-  left:500px;
-  position: absolute;
+#speedometer{
+    position: absolute;
+    bottom: 300px;
+    left: 730px;
+    width: 300px;
 }
 
 /*
@@ -310,13 +309,4 @@ h1 {
   100% {
     box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4a4a4a, 0 0 170px #4a4a4a, 0 0 180px #4a4a4a, 0 0 200px #4a4a4a, 0 0 350px #4a4a4a;
   }
-}
-
-@keyframes textbox-move {
-    0% {
-
-    }
-    100{
-
-    }
 }
