@@ -1,97 +1,100 @@
 html, body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  background: url("../images/background.png") center center fixed #87CEEB;
+  background: url("../images/background.png");
+  background-color: #87CEEB;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 
 .container {
-  position: fixed;
+  position: relative;
+  display: inline-block;
   margin: auto;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
 }
 
 #sign {
 position: absolute;
-bottom: 200px;
-left: 28%;
-width: 800px;
-height: 500px;
+bottom: -50rem;
+left: 30rem;
+width: 1000px;
+height: 700px;
 z-index: 6;
 }
 
 #sheep1 {
 position: absolute;
-bottom: 220px;
-left: 1350px;
+bottom: -55rem;
+left: 100rem;
 width: 130px;
 z-index: 5;
 }
 
 #sheep2 {
 position: absolute;
-bottom: 220px;
-left: 200px;
+bottom: -40rem;
+left: 20rem;
 width: 200px;
 z-index: 5;
 }
 
 #sheep3 {
 position: absolute;
-bottom: 220px;
-left: 185px;
+bottom: -42rem;
+left: 20rem;
 width: 120px;
 z-index: 5;
 }
 
 #planet-1 {
   position: absolute;
-  bottom: -750px;
-  left: 22%;
+  bottom: -108rem;
+  left: 30rem;
   width: 1000px;
   z-index: 4;
 }
 
 #planet-2 {
   position: absolute;
-  bottom: -750px;
-  right: 800px;
+  bottom: -108rem;
+  left: -10rem;
   width: 950px;
   z-index: 2;
-  animation: rotate2 20s linear infinite;
 }
+
 #planet-3 {
   position: absolute;
-  bottom: -750px;
-  left: 800px;
+  bottom: -108rem;
+  left: 70rem;
   width: 950px;
   z-index: 3;
-  animation: rotate1 20s linear infinite;
+  animation: rotate1 40s linear infinite;
 }
 
 .sun {
     position: absolute;
-    top: 3%;
-    left: 2%;
+    bottom: -15rem;
+    left: 3rem;
     margin: 0;
     padding: 0;
     width: 200px;
     height: 200px;
     background: #ffff00;
     border-radius: 50%;
-<<<<<<< HEAD
     box-shadow: 0px 0px 40px 15px yellow;
     animation: glow 10s linear infinite;
 }
-
 
 .sun li {
     list-style: none;
