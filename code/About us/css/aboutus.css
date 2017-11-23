@@ -31,7 +31,7 @@ z-index: 7;
 #text {
   position: absolute;
   top: 70px;
-  left: 450px;
+  left: 480px;
   width: 47rem;
   font-size: 2rem;
   font-family: arial;
@@ -68,7 +68,7 @@ z-index: 5;
 #planet-1 {
   position: absolute;
   top: 550px;
-  left: 380px;
+  left: 390px;
   width: 900px;
   z-index: 4;
 }
@@ -76,7 +76,7 @@ z-index: 5;
 #planet-2 {
   position: absolute;
   top: 580px;
-  left: -150px;
+  left: -120px;
   width: 950px;
   z-index: 2;
 }
@@ -84,7 +84,7 @@ z-index: 5;
 #planet-3 {
   position: absolute;
   top: 580px;
-  left: 820px;
+  left: 830px;
   width: 950px;
   z-index: 3;
   animation: rotate 40s linear infinite;
