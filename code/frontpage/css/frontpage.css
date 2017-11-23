@@ -23,7 +23,7 @@ html, body {
 /* Logo/Title */
 #logo {
     position: absolute;
-    left: 700px;
+    left: 650px;
     width: 500px;
     top: 100px;
     opacity: 1;
@@ -83,9 +83,9 @@ html, body {
 #barn {
   position: absolute;
   width: 200px;
-  transform: rotate(-12deg);
+  transform: rotate(5deg);
   top: 300px;
-  left: 1500px;
+  left: 1200px;
   z-index: 8;
 }
 #yellow-glow:hover{
@@ -97,9 +97,9 @@ html, body {
 /* Windmill with rotating wings */
 #windmill {
   position: absolute;
-  transform: scale(0.3) rotate(1deg);
+  transform: scale(0.3) rotate(-3deg);
   top: 150px;
-  left: 200px;
+  left: 100px;
   z-index: 5;
 }
 #wings{
@@ -119,18 +119,19 @@ html, body {
   width: 300px;
   top: 400px;
   left: 800px;
-  z-index: 5;
+  z-index: 11;
 }
 #sheep2{
   position: absolute;
   width: 100px;
-  top: 400px;
-  left: 360px;
+  top: 410px;
+  left: 560px;
+  z-index: 1;
 }
 #sheep3{
   position: absolute;
   width: 250px;
-  top: 500px;
+  top: 400px;
   left: 1300px;
   z-index: 6;
 }
@@ -156,17 +157,17 @@ html, body {
 /* Still and rotatating planets */
 #planet-1 {
   position: absolute;
-  top: 500px;
+  top: 550px;
   left: -100px;
   width: 1100px;
-  z-index: 1;
+  z-index: 9;
 }
 #planet-2 {
   position: absolute;
   top: 500px;
   left: 500px;
   width: 1000px;
-  z-index: 1;
+  z-index: 10;
 }
 #planet-3 {
   position: absolute;
@@ -180,17 +181,17 @@ html, body {
 /* Sign */
 #sign {
   position: absolute;
-  top: 500px;
+  top: 380px;
   transform: rotate(-4deg);
-  left: 12rem;
+  left: 300px;
   width: 250px;
-  z-index: 10;
+  z-index: 7;
 }
 
 /* Sun */
 #sun {
     position: absolute;
-    top: -500px;
+    top: -600px;
     left: -400px;
     width: 750px;
     height: 750px;
