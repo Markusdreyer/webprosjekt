@@ -3,65 +3,109 @@ html, body {
   padding: 0;
 }
 
-.container {
-  position: relative;
-  display: inline-block;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.backgroundimage {
-  background: url("../images/background.png");
+/* Container Div */
+#container {
   background-color: #87CEEB;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center top fixed;
-  height: 100vh;
+  position: absolute;
+  height: 100%;
   width: 100%;
   overflow: hidden;
 }
-#logo {
-    position: absolute;
-    bottom: 0;
-    left: 30rem;
-    width: 1000px;
-    opacity: 1;
-    z-index: 7;
-    animation: intro 0.6s linear;
-    animation-fill-mode: forwards;
 
+/* Background Image */
+#background-mountains
+{
+  position: relative;
+  left:0px;
+  bottom: 180px;
 }
 
+/* Logo/Title */
+#logo {
+    position: absolute;
+    left: 500px;
+    width: 750px;
+    top: 100px;
+    opacity: 1;
+    z-index: 7;
+    animation: intro 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+/* Birds */
+#bird1 {
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  z-index: 1;
+}
+#bird2 {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  animation-delay: 0.5s
+}
+#bird3 {
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  animation-delay: 1s;
+}
+
+/* Customize Text */
+#text {
+  position: relative;
+  transform: rotate(-12deg);
+  top:100px;
+  left:400px;
+  font-size: 2rem;
+  color: #30260f;
+  z-index: 8;
+  animation: updown 1.5s linear infinite;
+}
+
+/* Customize Text animation*/
+@keyframes updown {
+  0%{
+    top: 100px;
+  }
+  50% {
+    top: 120px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+/* Barn image with glow on hover */
 #barn {
   position: absolute;
   width: 200px;
-  transform: rotate(-12deg);
-  bottom: -40rem;
-  left: 97rem;
-  z-index: 1;
-}
-#barnglow {
-  display: none;
-  position: absolute;
-  width: 200px;
-  transform: rotate(-12deg);
-  bottom: -40rem;
-  left: 97rem;
-  z-index: 2;
-}
-#barn:hover > #barnglow {
-  display: block;
+  transform: rotate(5deg);
+  top: 300px;
+  left: 1200px;
+  z-index: 8;
 }
 
+#yellow-glow:hover{
+  filter: drop-shadow(5px 5px 15px yellow)
+          drop-shadow(-5px -5px 15px yellow);
+  z-index: 8;
+}
 
+#barn:active {
+    animation: barn-size 0.7s;
+    animation-fill-mode: forwards;
+}
+
+/* Windmill with rotating wings */
 #windmill {
   position: absolute;
-  transform: scale(0.3) rotate(1deg);
-  bottom: -18.5rem;
-  left: 10rem;
+  transform: scale(0.3) rotate(-3deg);
+  top: 150px;
+  left: 100px;
   z-index: 5;
 }
 #wings{
@@ -75,96 +119,109 @@ html, body {
   position: absolute;
 }
 
+/* Sheep images/gif */
 #sheep1{
   position: absolute;
   width: 300px;
-  bottom: -50rem;
-  left: 53rem;
-  z-index: 5;
+  top: 400px;
+  left: 800px;
+  z-index: 11;
 }
 #sheep2{
   position: absolute;
   width: 100px;
-  bottom: -40rem;
-  left: 25rem;
+  top: 410px;
+  left: 560px;
+  z-index: 1;
 }
 #sheep3{
   position: absolute;
-  width: 190px;
-  bottom: -52rem;
-  left: 95rem;
+  width: 250px;
+  top: 400px;
+  left: 1300px;
   z-index: 6;
 }
 
+/* Sheep talking bubbles */
+#sheep-speech1{
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 20px;
+    left: 670px;
+    top: 350px;
+    display: none;
+    border: 0.4rem solid black;
+
+}
+
+#sheep1:hover ~ #sheep-speech1{
+    display: block;
+}
+
+/* Still and rotatating planets */
 #planet-1 {
   position: absolute;
-  bottom: -108rem;
-  left: 30rem;
+  top: 550px;
+  left: -100px;
   width: 1100px;
-  z-index: 4;
+  z-index: 9;
 }
 #planet-2 {
   position: absolute;
-  bottom: -108rem;
-  left: -10rem;
+  top: 500px;
+  left: 500px;
   width: 1000px;
-  z-index: 2;
+  z-index: 10;
 }
 #planet-3 {
   position: absolute;
-  bottom: -108rem;
-  left: 70rem;
+  top: 500px;
+  left: 1100px;
   width: 1000px;
-  z-index: 3;
+  z-index: 1;
   animation: rotate 70s linear infinite;
 }
 
-
+/* Sign */
 #sign {
   position: absolute;
-  bottom: -53rem;
+  top: 380px;
   transform: rotate(-4deg);
-  left: 12rem;
+  left: 300px;
   width: 250px;
-  z-index: 6;
+  z-index: 7;
 }
 
-
-#birds {
-  position: absolute;
-  bottom: -20rem;
-  left: 0rem;
-  width: 400px;
-  animation: fly 30s linear infinite;
-  z-index: 1;
-}
-
-
-.sun {
+/* Sun */
+#sun {
     position: absolute;
-    bottom: -15rem;
-    left: 3rem;
-    margin: 0;
-    padding: 0;
-    width: 200px;
-    height: 200px;
+    top: -600px;
+    left: -400px;
+    width: 750px;
+    height: 750px;
     background: #FFFF66	;
     border-radius: 50%;
-    box-shadow: 0px 0px 40px 15px yellow;
+    box-shadow: 0px 0px 60px 15px yellow;
     animation: glow 40s linear infinite;
 }
 
+/* Title/Logo animation */
 @keyframes intro {
   0% {
-      bottom: : 0rem;
+      top:-200px;
       opacity: 0;
   }
   100% {
-      bottom: -32rem;
+      top: 30px;
       opacity: 1;
   }
 }
 
+/* Sun glow animation */
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
@@ -180,6 +237,7 @@ html, body {
   }
 }
 
+/* Animation for rotating planet */
 @keyframes rotate {
     0%
     {
@@ -195,6 +253,7 @@ html, body {
     }
 }
 
+/* Animation for rotating windmill */
 @keyframes rotate1 {
    0% {
      transform: rotate(0deg);
@@ -207,30 +266,43 @@ html, body {
    }
  }
 
+/* Animation for birds */
 @keyframes fly {
   0% {
-    left: -40rem;
+    left: -1000px;
   }
   20% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 0deg);
   }
   40% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 180deg);
   }
   60% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 180deg);
   }
   80% {
-    left: -40rem;
+    left: -1000px;
     transform: rotateY( 180deg);
   }
   100% {
-    left: -40rem;
+    left: -1000px;
     transform: rotateY( 0deg);
   }
 }
 
+@keyframes barn-size {
+    0% {
+        transform: scale(1) rotate(5deg);
+        top: 300px;
+        left: 1200px;
+    }
+    100% {
+        transform: scale(2) rotate(5deg);
+        top: 300px;
+        left: 1200px;
+
+    }
 }
