@@ -159,6 +159,10 @@
   top:420px;
   left: 450px;
   transform: rotate(-10deg);
+
+}
+#barn:hover{
+    animation: float 2s infinite;
 }
 #yellow-glow-barn:hover{
   filter: drop-shadow(2px 2px 0 yellow)
@@ -253,4 +257,12 @@
     background-color:  #87CEEB;}
     100%{
       background-color: #370860;}
+}
+@keyframes float{
+  0%{
+  top:420px;}
+  50%{
+  top:410px;}
+  100%{
+  top:420px;}
 }
