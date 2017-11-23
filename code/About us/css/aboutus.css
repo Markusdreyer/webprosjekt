@@ -32,7 +32,7 @@ html, body {
 /*Text for the sign*/
 #text {
   position: absolute;
-  top: 70px;
+  top: 75px;
   left: 470px;
   width: 47rem;
   font-size: 30px;
