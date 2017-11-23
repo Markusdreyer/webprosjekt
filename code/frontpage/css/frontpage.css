@@ -96,7 +96,7 @@ html, body {
 }
 
 #barn:active {
-    animation: barn-size 5s infinite;
+    animation: barn-size 0.7s;
     animation-fill-mode: forwards;
 }
 
@@ -295,14 +295,14 @@ html, body {
 
 @keyframes barn-size {
     0% {
-        transform: scale(1) rotate(-12deg);
+        transform: scale(1) rotate(5deg);
         top: 300px;
-        left: 1500px;
+        left: 1200px;
     }
     100% {
-        transform: scale(5) rotate(-12deg);
-        top: 100px;
-        left: 1500px;
+        transform: scale(2) rotate(5deg);
+        top: 300px;
+        left: 1200px;
 
     }
 }
