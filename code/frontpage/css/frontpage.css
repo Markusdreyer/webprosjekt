@@ -26,8 +26,13 @@ html, body {
 #logo {
     position: absolute;
     bottom: 0;
+<<<<<<< HEAD
     left: 35rem;
     width: 900px;
+=======
+    left: 30rem;
+    width: 1000px;
+>>>>>>> 0c7fa014d276afc7b8ac7042aaa0b8500623d799
     opacity: 1;
     z-index: 7;
     animation: intro 0.6s linear;
@@ -160,7 +165,7 @@ html, body {
       opacity: 0;
   }
   100% {
-      bottom: -24rem;
+      bottom: -32rem;
       opacity: 1;
   }
 }
