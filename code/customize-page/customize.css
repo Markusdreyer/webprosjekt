@@ -290,9 +290,8 @@ h1 {
 
 #slow {
     position: absolute;
-    margin-bottom: -100px;
-    bottom: 400px;
-    left: 730px;
+    bottom: 300px;
+    left: 731px;
     width: 300px;
     opacity: 0;
 
