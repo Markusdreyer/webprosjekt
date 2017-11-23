@@ -197,12 +197,19 @@
   background-color: #abc3c4;
   left: 900px;
   top: 315px;
+  box-shadow: 5px 9px #212622;
   text-decoration: none;
   z-index: 4;
 }
 #yellow-glow-pay:hover{
+  background-color: #8ea1a2;
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
+ z-index: 4;
+}
+#yellow-glow-pay:active{
+box-shadow: 2px 4px #141614;
+transform: translateY(2px);
  z-index: 4;
 }
 #sau-front{
