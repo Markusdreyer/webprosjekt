@@ -3,6 +3,7 @@ html, body {
   padding: 0;
 }
 
+/* Container Div */
 #container {
   background-color: #87CEEB;
   position: absolute;
@@ -10,45 +11,51 @@ html, body {
   width: 100%;
   overflow: hidden;
 }
+
+/* Background Image */
 #background-mountains
 {
   position: relative;
   left:0px;
-  bottom: 250px;
-  overflow: hidden;
+  bottom: 180px;
 }
+
+/* Logo/Title */
 #logo {
     position: absolute;
-    left: 500px;
+    left: 700px;
     width: 500px;
     top: 100px;
     opacity: 1;
     z-index: 7;
-    animation: intro 0.6s linear;
+    animation: intro 0.4s linear;
     animation-fill-mode: forwards;
 }
 
+/* Birds */
 #bird1 {
   position: absolute;
-  top: 0px;
+  top: 100px;
   left: -200px;
   animation: fly 50s linear infinite;
+  z-index: 1;
 }
 #bird2 {
   position: absolute;
-  top: 0px;
+  top: 50px;
   left: -200px;
   animation: fly 50s linear infinite;
   animation-delay: 0.5s
 }
 #bird3 {
   position: absolute;
-  top: 0px;
+  top: 100px;
   left: -200px;
   animation: fly 50s linear infinite;
   animation-delay: 1s;
 }
 
+/* Customize Text */
 #text {
   position: relative;
   transform: rotate(-12deg);
@@ -60,6 +67,7 @@ html, body {
   animation: updown 1.5s linear infinite;
 }
 
+/* Customize Text animation*/
 @keyframes updown {
   0%{
     top: 100px;
@@ -71,12 +79,13 @@ html, body {
     bottom: 100px;
   }
 }
+/* Barn image with glow on hover */
 #barn {
   position: absolute;
   width: 200px;
   transform: rotate(-12deg);
   top: 300px;
-  left: 600px;
+  left: 1500px;
   z-index: 8;
 }
 #yellow-glow:hover{
@@ -85,12 +94,12 @@ html, body {
   z-index: 8;
 }
 
-
+/* Windmill with rotating wings */
 #windmill {
   position: absolute;
   transform: scale(0.3) rotate(1deg);
-  top: 300px;
-  left: 0px;
+  top: 150px;
+  left: 200px;
   z-index: 5;
 }
 #wings{
@@ -104,31 +113,33 @@ html, body {
   position: absolute;
 }
 
+/* Sheep images/gif */
 #sheep1{
   position: absolute;
   width: 300px;
-  top: 0px;
-  left: 0px;
+  top: 400px;
+  left: 800px;
   z-index: 5;
 }
 #sheep2{
   position: absolute;
   width: 100px;
-  top: 0px;
-  left: 0px;
+  top: 400px;
+  left: 360px;
 }
 #sheep3{
   position: absolute;
-  width: 190px;
-  top: 0px;
-  left: 0px;
+  width: 250px;
+  top: 500px;
+  left: 1300px;
   z-index: 6;
 }
 
+/* Still and rotatating planets */
 #planet-1 {
   position: absolute;
   top: 500px;
-  left: 0px;
+  left: -100px;
   width: 1100px;
   z-index: 1;
 }
@@ -142,13 +153,13 @@ html, body {
 #planet-3 {
   position: absolute;
   top: 500px;
-  left: 1000px;
+  left: 1100px;
   width: 1000px;
   z-index: 1;
   animation: rotate 70s linear infinite;
 }
 
-
+/* Sign */
 #sign {
   position: absolute;
   top: 500px;
@@ -158,21 +169,11 @@ html, body {
   z-index: 10;
 }
 
-
-#birds {
-  position: absolute;
-  bottom: -20rem;
-  left: 0rem;
-  width: 400px;
-  animation: fly 30s linear infinite;
-  z-index: 1;
-}
-
-
+/* Sun */
 #sun {
     position: absolute;
     top: -500px;
-    left: 200px;
+    left: -400px;
     width: 750px;
     height: 750px;
     background: #FFFF66	;
@@ -181,6 +182,7 @@ html, body {
     animation: glow 40s linear infinite;
 }
 
+/* Title/Logo animation */
 @keyframes intro {
   0% {
       top:-200px;
@@ -192,6 +194,7 @@ html, body {
   }
 }
 
+/* Sun glow animation */
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
@@ -207,6 +210,7 @@ html, body {
   }
 }
 
+/* Animation for rotating planet */
 @keyframes rotate {
     0%
     {
@@ -222,6 +226,7 @@ html, body {
     }
 }
 
+/* Animation for rotating windmill */
 @keyframes rotate1 {
    0% {
      transform: rotate(0deg);
@@ -234,28 +239,29 @@ html, body {
    }
  }
 
+/* Animation for birds */
 @keyframes fly {
   0% {
-    left: -40rem;
+    left: -1000px;
   }
   20% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 0deg);
   }
   40% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 180deg);
   }
   60% {
-    left: 120rem;
+    left: 2000px;
     transform: rotateY( 180deg);
   }
   80% {
-    left: -40rem;
+    left: -1000px;
     transform: rotateY( 180deg);
   }
   100% {
-    left: -40rem;
+    left: -1000px;
     transform: rotateY( 0deg);
   }
 }
