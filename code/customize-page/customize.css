@@ -27,7 +27,7 @@ h1 {
 #machine {
     bottom: 0; /*top: 163px*/
     margin-bottom: -13px;
-    width: 650px;
+    width: 45%;
     left: 15px;
     position: absolute;
     z-index: 1;
@@ -63,7 +63,7 @@ h1 {
     width: 400px;
     height: 500px;
     left: 50%;
-    bottom: 67px;
+    bottom: 2%;
     position: absolute;
 
 }
@@ -114,10 +114,11 @@ h1 {
 */
 
 #machine-container {
-    width: 599px;
-    height: 457px;
-    left: 33px;
-    bottom: 79px; /*top: 253.5px*/
+    width: 41.5%;
+    min-height: 460px;
+    left: 37px;
+    bottom: 0px; /*top: 253.5px*/
+    margin-bottom: 78.5px;
     position: absolute;
     border-radius: 15px;
     z-index: 2;
@@ -300,7 +301,7 @@ h1 {
     position: absolute;
     bottom: 300px;
     left: 731px;
-    width: 300px;
+    width: 400px;
     opacity: 0;
 
 }
@@ -313,7 +314,7 @@ h1 {
     position: absolute;
     bottom: 300px;
     left: 730px;
-    width: 300px;
+    width: 400px;
     opacity: 0;
 }
 
@@ -323,9 +324,11 @@ h1 {
 
 #fast {
     position: absolute;
-    bottom: 300px;
-    left: 730px;
-    width: 300px;
+    top: 0;
+    margin-top: -500px;
+    left: 0;
+    margin-left: 730px;
+    width: 400px;
     opacity: 0;
 }
 
@@ -333,13 +336,7 @@ h1 {
     opacity: 2;
 }
 
-#default {
-    position: absolute;
-    bottom: 200px;
-    left: 730px;
-    width: 300px;
-    opacity: 0;
-}
+
 
 
 /*
