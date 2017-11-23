@@ -136,12 +136,13 @@ html, body {
   left: 560px;
   z-index: 1;
   transform: rotate( 10deg);
+  animation: walk 15s linear infinite;
 }
 #sheep3{
   position: absolute;
   width: 250px;
   top: 400px;
-  left: 1300px;
+  left: 1350px;
   z-index: 6;
 }
 
@@ -266,6 +267,39 @@ html, body {
    }
    100% {
      transform: rotate(-360deg);
+   }
+ }
+ /* Animation for black sheep */
+ @keyframes walk {
+   0% {
+     top: 410px;
+     left: 560px;
+     transform: rotateY( 0deg);
+   }
+   20% {
+     top: 410px;
+     left: 560px;
+     transform: rotateY( 180deg);
+   }
+   40% {
+     top: 510px;
+     left: 760px;
+     transform: rotateY( 180deg);
+   }
+   60% {
+     top: 510px;
+     left: 760px;
+     transform: rotateY( 180deg);
+   }
+   80% {
+      top: 510px;
+      left: 760px;
+     transform: rotateY( 0deg);
+   }
+   100% {
+     top: 410px;
+     left: 560px;
+     transform: rotateY( 0deg);
    }
  }
 
