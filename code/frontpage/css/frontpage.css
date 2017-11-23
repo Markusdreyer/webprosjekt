@@ -1,12 +1,31 @@
 html, body {
+  margin: 0 auto;
   padding: 0;
-  margin: 0;
 }
 
 #container {
+<<<<<<< HEAD
   background-color: #87CEEB;
   position: absolute;
   height: 100%;
+=======
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+#backgroundimage {
+  background: url("../images/background.png");
+  background-color: #87CEEB;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top fixed;
+  height: 100vh;
+>>>>>>> 67d63bf5cd66c78791b7bc2bc75c406f0f676993
   width: 100%;
   overflow: hidden;
 }
@@ -18,15 +37,22 @@ html, body {
 }
 #logo {
     position: absolute;
+<<<<<<< HEAD
     left: 500px;
     width: 500px;
     top: 100px;
+=======
+    bottom: 0;
+    left: 26rem;
+    width: 1000px;
+>>>>>>> 67d63bf5cd66c78791b7bc2bc75c406f0f676993
     opacity: 1;
     z-index: 7;
     animation: intro 0.6s linear;
     animation-fill-mode: forwards;
 
 }
+<<<<<<< HEAD
 
 #bird1 {
   position: relative;
@@ -49,13 +75,14 @@ html, body {
   animation-delay: 1s;
 }
 
+=======
+>>>>>>> 67d63bf5cd66c78791b7bc2bc75c406f0f676993
 #text {
   position: relative;
   transform: rotate(-12deg);
   top:100px;
   left:400px;
   font-size: 2rem;
-  font-style: helvetica;
   color: #30260f;
   z-index: 8;
   animation: updown 1.5s linear infinite;
@@ -81,9 +108,15 @@ html, body {
   z-index: 8;
 }
 #yellow-glow:hover{
+<<<<<<< HEAD
   filter: drop-shadow(5px 5px 15px yellow)
           drop-shadow(-5px -5px 15px yellow);
   z-index: 8;
+=======
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+  z-index: 6;
+>>>>>>> 67d63bf5cd66c78791b7bc2bc75c406f0f676993
 }
 
 
@@ -158,6 +191,17 @@ html, body {
   width: 250px;
   z-index: 10;
 }
+
+
+#birds {
+  position: absolute;
+  bottom: -20rem;
+  left: 0rem;
+  width: 400px;
+  animation: fly 30s linear infinite;
+  z-index: 1;
+}
+
 
 #sun {
     position: absolute;
