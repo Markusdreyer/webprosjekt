@@ -75,6 +75,10 @@ h1 {
     font-size: 20px;
 }
 
+/*
+* machine-container for scalability
+*/
+
 #machine {
     bottom: 0; /*top: 163px*/
     margin-bottom: -14px;
@@ -84,14 +88,8 @@ h1 {
     z-index: 1;
 }
 
-#placeholder {
-    position: absolute;
-    left: 53%;
-    top: 53%;
-}
-
 /*
-*    unused overlay-effect
+*    overlay div for contrast-control
 */
 
 #overlay {
