@@ -121,6 +121,8 @@ z-index: 5;
   left: 35rem;
   width: 47rem;
   font-size: 2rem;
+  font-family: arial;
+  font-style: normal;
   color: #30260f;
   z-index: 9;
 }
