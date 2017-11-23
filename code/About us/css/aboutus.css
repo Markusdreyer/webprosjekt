@@ -117,8 +117,9 @@ z-index: 5;
 
 #text {
   position: absolute;
-  bottom: -5rem;
+  bottom: -20rem;
   left: 35rem;
+  width: 47rem;
   font-size: 2rem;
   color: #30260f;
   z-index: 9;
