@@ -226,7 +226,8 @@ transform: translateY(2px);
   top: 340px;
   width: 200px;
   z-index: 1;
-  animation: move 15s infinite;
+  animation: move 15s;
+  animation-fill-mode: forwards;
 }
 #sau-back-brown{
   position: absolute;
@@ -296,14 +297,19 @@ transform: translateY(2px);
       transform: rotate(360deg);}
 }
 @keyframes move{
-  0%{
-    left:1200px;}
-  50%{transform: scale(2) scaleX(-1);
-      left:850px;
-      top:350px;}
-  75%{
-    left:1200px;
-    transform: scaleX(-1);}
-  100%{
+  0%{left:1200px;
+     transform: scaleX(1);}
+  50%{
+      left:1100px;
+      top:330px;
       transform: scaleX(1);}
+  70%{left:1000px;
+       top:360px;
+       transform: scaleX(1);}
+  71%{left:1000px;
+       transform: scaleX(-1);}
+  100%{left:1100px;
+        top:380px;
+        transform: scaleX(-1);}
+
 }
