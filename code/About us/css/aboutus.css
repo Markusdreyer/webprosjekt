@@ -22,7 +22,7 @@ html, body {
 #sign {
 position: absolute;
 top: 10px;
-left: 350px;
+left: 380px;
 width: 900px;
 height: 700px;
 z-index: 7;
@@ -68,7 +68,7 @@ z-index: 5;
 #planet-1 {
   position: absolute;
   top: 550px;
-  left: 350px;
+  left: 380px;
   width: 900px;
   z-index: 4;
 }
@@ -84,7 +84,7 @@ z-index: 5;
 #planet-3 {
   position: absolute;
   top: 580px;
-  left: 780px;
+  left: 820px;
   width: 950px;
   z-index: 3;
   animation: rotate 40s linear infinite;
