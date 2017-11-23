@@ -152,13 +152,11 @@ html, body {
     background-color: white;
     padding: 1rem;
     font-size: 1.5rem;
-    font-weight: bold;
-    font-family: sans-serif;
+    font-family: helvetica;
     border-radius: 20px;
     left: 670px;
     top: 350px;
     display: none;
-    border: 0.4rem solid black;
 
 }
 
