@@ -1,33 +1,28 @@
 html, body {
   margin: 0 auto;
   padding: 0;
-  background: url("../images/background.png");
-  background-color: #87CEEB;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
 }
 
 
-.container {
+#container {
+  background-color: #87CEEB;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+#background-mountains
+{
   position: relative;
-  display: inline-block;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  left:0px;
+  bottom: 250px;
+  overflow: hidden;
 }
 
 #sign {
 position: absolute;
-bottom: -52rem;
-left: 30rem;
+top: 0px;
+left: 0px;
 width: 1000px;
 height: 750px;
 z-index: 7;
@@ -35,8 +30,8 @@ z-index: 7;
 
 #text {
   position: absolute;
-  bottom: -20rem;
-  left: 35rem;
+  top: 0px;
+  left: 0px;
   width: 47rem;
   font-size: 2rem;
   font-family: arial;
@@ -48,48 +43,48 @@ z-index: 7;
 
 #sheep1 {
 position: absolute;
-bottom: -55rem;
-left: 97rem;
+top: 0px;
+left: 0px;
 width: 230px;
 z-index: 5;
 }
 
 #sheep2 {
 position: absolute;
-bottom: -40rem;
-left: 20rem;
+top: 0px;
+left: 0px;
 width: 150px;
 z-index: 5;
 }
 
 #sheep3 {
 position: absolute;
-bottom: -42rem;
-left: 15rem;
+top: 0px;
+left: 0px;
 width: 120px;
 z-index: 5;
 }
 
 #planet-1 {
   position: absolute;
-  bottom: -108rem;
-  left: 35rem;
+  top: 0px;
+  left: 0px;
   width: 1000px;
   z-index: 4;
 }
 
 #planet-2 {
   position: absolute;
-  bottom: -108rem;
-  left: -5rem;
+  top: 0px;
+  left: 0px;
   width: 950px;
   z-index: 2;
 }
 
 #planet-3 {
   position: absolute;
-  bottom: -108rem;
-  left: 75rem;
+  top: 0px;
+  left: 0px;
   width: 950px;
   z-index: 3;
   animation: rotate 40s linear infinite;
@@ -112,14 +107,14 @@ z-index: 5;
 #windmill {
   position: absolute;
   transform: scale(0.3) rotate(-7deg);
-  bottom: -21rem;
-  left: 100rem;
+  top: 0px;
+  left: 0px;
   z-index: 6;
 }
 #wings{
   position: absolute;
-  left: 5.9rem;
-  bottom: -48rem;
+  top: 0px;
+  left: 0px;
   z-index: 1;
   animation: rotate 3s linear infinite;
 }

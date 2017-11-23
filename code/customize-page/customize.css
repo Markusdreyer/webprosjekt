@@ -18,6 +18,56 @@ body {
     margin: 0;
 }
 
+#intro-text {
+    background-color: #92aaac;
+    font-family: coyote;
+    position: absolute;
+    border: 5px solid #5b5b5b;
+    left: 750px;
+    bottom: 300px;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+#checkout {
+    background-color: #92aaac;
+    font-family: coyote;
+    position: absolute;
+    border: 5px solid #5b5b5b;
+    left: 1200px;
+    bottom: 30px;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+#checkout:active {
+    border-color: #92aaac;
+    background-color: #5b5b5b;
+}
+
+#frontpage {
+    background-color: #92aaac;
+    font-family: coyote;
+    position: absolute;
+    border: 5px solid #5b5b5b;
+    left: 130px;
+    bottom: 0px;
+    margin-bottom: 1px;
+    padding: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: black;
+    border-radius: 15px;
+    z-index: 5;
+}
+
+#frontpage:active {
+    border-color: #92aaac;
+    background-color: #5b5b5b;
+}
+
 h1 {
     font-family: coyote;
     color: #fcfdfd;
@@ -26,7 +76,7 @@ h1 {
 
 #machine {
     bottom: 0; /*top: 163px*/
-    margin-bottom: -13px;
+    margin-bottom: -14px;
     width: 650px;
     left: 15px;
     position: absolute;
@@ -99,6 +149,7 @@ h1 {
     opacity: 0.6;
     position: relative;
     z-index: 0;
+
 }
 
 #lamp {
@@ -298,8 +349,9 @@ h1 {
 
 #slow {
     position: absolute;
-    bottom: 300px;
-    left: 731px;
+    top: 300px;
+    margin-top: -500px;
+    right: 0;
     width: 400px;
     opacity: 0;
 
@@ -307,32 +359,38 @@ h1 {
 
 #slow:target {
     opacity: 2;
+    animation: speedometer 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #mid {
     position: absolute;
-    bottom: 300px;
-    left: 730px;
+    top: 300px;
+    margin-top: -500px;
+    right: 0;
     width: 400px;
     opacity: 0;
 }
 
 #mid:target {
     opacity: 2;
+    animation: speedometer 0.5s;
+    animation-fill-mode: forwards;
 }
 
 #fast {
     position: absolute;
-    top: 0;
+    top: -34px;
     margin-top: -500px;
-    left: 0;
-    margin-left: 730px;
+    right: 0;
     width: 400px;
     opacity: 0;
 }
 
 #fast:target {
     opacity: 2;
+    animation: speedometer 0.5s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -341,15 +399,11 @@ h1 {
 /*
 * keyframes Start
 */
-
-@keyframes greyGlow {
-  0% {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4a4a4a, 0 0 170px #4a4a4a, 0 0 180px #4a4a4a, 0 0 200px #4a4a4a, 0 0 350px #4a4a4a;
-  }
-  50% {
-    box-shadow: 0 0 200px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #4a4a4a, 0 0 35px #4a4a4a, 0 0 40px #4a4a4a, 0 0 50px #4a4a4a, 0 0 80px #4a4a4a;
-  }
-  100% {
-    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #4a4a4a, 0 0 170px #4a4a4a, 0 0 180px #4a4a4a, 0 0 200px #4a4a4a, 0 0 350px #4a4a4a;
-  }
+@keyframes speedometer {
+    0% {
+        top: -34px;
+    }
+    100% {
+        top: 300px;
+    }
 }
