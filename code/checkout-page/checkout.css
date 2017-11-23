@@ -164,17 +164,35 @@
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
 }
-#sign{
+#pay{
   position: absolute;
-  width: 100px;
-  top: 480px;
-  left:1490px;
+  width: 400px;
+  top: 50px;
+  left:650px;
   z-index: 3;
 }
-#yellow-glow-sign:hover{
+#pay-text{
+  position: relative;
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 1.7rem;
+  font-weight: 3rem;
+  top: -10px;
+}
+#yellow-glow-pay{
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background-color: #abc3c4;
+  left: 900px;
+  top: 315px;
+  text-decoration: none;
+  z-index: 4;
+}
+#yellow-glow-pay:hover{
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
- z-index: 3;
+ z-index: 4;
 }
 #sau-front{
   position: absolute;
@@ -235,15 +253,3 @@
     100%{
       background-color: #370860;}
 }
-
-@keyframes rotate{
-   0% {
-     transform: rotate(0deg)
-    }
-   50% {
-    transform: rotate(-180deg)
-   }
-   100% {
-     transform: rotate(-360deg)
-   }
- }
