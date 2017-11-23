@@ -135,6 +135,24 @@ html, body {
   z-index: 6;
 }
 
+/* Sheep talking bubbles */
+#sheep-speech1{
+    position: absolute;
+    background-color: white;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    left: 670px;
+    top: 330px;
+    display: none;
+    border: 0.4rem solid black;
+    font-weight: bold;
+}
+
+#sheep1:hover ~ #sheep-speech1{
+    display: block;
+}
+
 /* Still and rotatating planets */
 #planet-1 {
   position: absolute;
