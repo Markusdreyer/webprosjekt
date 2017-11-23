@@ -115,12 +115,13 @@ z-index: 5;
 
 }
 
-.About-text:before {
-content: "About";
-position: absolute;
-left: 200rem;
-bottom: 60rem;
-z-index: 8;
+#text {
+  position: absolute;
+  bottom: -5rem;
+  left: 35rem;
+  font-size: 2rem;
+  color: #30260f;
+  z-index: 9;
 }
 
 .sun {
