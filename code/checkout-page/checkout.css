@@ -160,11 +160,22 @@
   left: 450px;
   transform: rotate(-10deg);
 }
-#yellow-glow:hover{
+#yellow-glow-barn:hover{
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
 }
-
+#sign{
+  position: absolute;
+  width: 100px;
+  top: 480px;
+  left:1490px;
+  z-index: 3;
+}
+#yellow-glow-sign:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+ z-index: 3;
+}
 #sau-front{
   position: absolute;
   width: 300px;
