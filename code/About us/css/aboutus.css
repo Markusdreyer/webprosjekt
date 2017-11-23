@@ -20,31 +20,32 @@ html, body {
 }
 
 #sign {
-position: absolute;
-top: 10px;
-left: 380px;
-width: 900px;
-height: 700px;
-z-index: 7;
+    position: absolute;
+    top: 10px;
+    left: 380px;
+    width: 900px;
+    height: 700px;
+    z-index: 7;
 }
 
 #text {
   position: absolute;
   top: 70px;
-  left: 480px;
+  left: 470px;
   width: 47rem;
-  font-size: 2rem;
-  font-family: arial;
+  font-size: 30px;
+  font-family: helvetica;
   font-style: normal;
   color: #30260f;
   z-index: 9;
+
 }
 
 
 #sheep1 {
 position: absolute;
 top: 470px;
-left: 1300px;
+left: 1200px;
 width: 230px;
 z-index: 5;
 }
