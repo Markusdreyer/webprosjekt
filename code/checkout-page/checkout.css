@@ -6,15 +6,35 @@
   height: 110%;
   width: 110%;
   overflow: hidden;
+  animation: day-night 70s;
+  animation-fill-mode: forwards;
 }
 #hay-ground{
   position: absolute;
   height:1000px;
-  width:2100px;
+  width:3000px;
   border-radius: 200%;
-  background-color: #ccc527;
+  background-color: #f4df28;
   top:570px;
-  left: -220px;
+  left: -590px;
+}
+#hay-ground-layer1{
+  position: absolute;
+  height:1000px;
+  width:3000px;
+  border-radius: 200%;
+  background-color: #c6b41f;
+  top:640px;
+  left: -590px;
+}
+#hay-ground-layer2{
+  position: absolute;
+  height:1000px;
+  width:3000px;
+  border-radius: 200%;
+  background-color: #f4df28;
+  top:740px;
+  left: -590px;
 }
 
 .hay{
@@ -79,7 +99,22 @@
   left: 65%;
   top:-55%;
 }
-
+.hay-layer1{
+  position: relative;
+  height: 15px;
+  width: 5px;
+  top: 0%;
+  background-color: #8b8615;
+    transform: translateX(50px);
+}
+.hay-layer2{
+  position: relative;
+  height: 15px;
+  width: 7px;
+  top: -20px;
+  background-color: #8b8615;
+  transform: translateX(100px);
+}
 #img-container{
   position: relative;
   width: 100%;
@@ -125,11 +160,45 @@
   left: 450px;
   transform: rotate(-10deg);
 }
+#yellow-glow-barn:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+}
+#pay{
+  position: absolute;
+  width: 400px;
+  top: 50px;
+  left:650px;
+  z-index: 3;
+}
+#pay-text{
+  position: relative;
+  text-align: center;
+  font-family:sans-serif;
+  font-size: 1.7rem;
+  font-weight: 3rem;
+  top: -10px;
+}
+#yellow-glow-pay{
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  background-color: #abc3c4;
+  left: 900px;
+  top: 315px;
+  text-decoration: none;
+  z-index: 4;
+}
+#yellow-glow-pay:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+ z-index: 4;
+}
 #sau-front{
   position: absolute;
   width: 300px;
   top: 500px;
-  left: 650px;
+  left: 350px;
   z-index: 2;
 
 }
@@ -166,15 +235,21 @@
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
-    transform: rotate(220deg) translateX(1050px);
-  }
+    transform: rotate(220deg) translateX(1050px);}
   50% {
     box-shadow: 0px 0px 60px 30px orange;
-    transform: rotate(360deg) translateX(1050px) ;
-  }
+    transform: rotate(360deg) translateX(1050px) ;}
   100% {
     box-shadow: 0px 0px 40px 15px yellow;
-    transform: rotate(220deg) translateX(1050px) rotate(0deg);
-  }
+    transform: rotate(220deg) translateX(1050px) rotate(0deg);}
 
+}
+
+@keyframes day-night{
+  0%{
+    background-color: #370860;}
+  50%{
+    background-color:  #87CEEB;}
+    100%{
+      background-color: #370860;}
 }
