@@ -27,9 +27,8 @@ html, body {
 #sign {
 position: absolute;
 bottom: -52rem;
-left: 30rem;
-width: 1000px;
-height: 750px;
+left: 39rem;
+width: 700px;
 z-index: 8;
 }
 
