@@ -33,22 +33,16 @@ height: 750px;
 z-index: 7;
 }
 
-#windmill {
+#text {
   position: absolute;
-  transform: scale(0.3) rotate(-7deg);
-  bottom: -21rem;
-  left: 100rem;
-  z-index: 6;
-}
-#wings{
-  position: absolute;
-  left: 5.9rem;
-  bottom: -48rem;
-  z-index: 1;
-  animation: rotate 3s linear infinite;
-}
-#house{
-  position: absolute;
+  bottom: -20rem;
+  left: 35rem;
+  width: 47rem;
+  font-size: 2rem;
+  font-family: arial;
+  font-style: normal;
+  color: #30260f;
+  z-index: 9;
 }
 
 
@@ -103,10 +97,10 @@ z-index: 5;
 
 #arrow{
   position: absolute;
-  width: 140px;
+  width: 200px;
   height: 15rem;
   bottom: -50rem;
-  left: 7rem;
+  left: 3rem;
 }
 
 #yellow-glow-arrow:hover{
@@ -115,13 +109,22 @@ z-index: 5;
 
 }
 
-#text {
+#windmill {
   position: absolute;
-  bottom: -5rem;
-  left: 35rem;
-  font-size: 2rem;
-  color: #30260f;
-  z-index: 9;
+  transform: scale(0.3) rotate(-7deg);
+  bottom: -21rem;
+  left: 100rem;
+  z-index: 6;
+}
+#wings{
+  position: absolute;
+  left: 5.9rem;
+  bottom: -48rem;
+  z-index: 1;
+  animation: rotate 3s linear infinite;
+}
+#house{
+  position: absolute;
 }
 
 .sun {
@@ -165,31 +168,3 @@ z-index: 5;
     transform: rotate(360deg);
   }
 }
-
-
-
-@keyframes rotate1 {
-   0% {
-     transform: rotate(0deg);
-    }
-   50% {
-    transform: rotate(180deg);
-   }
-   100% {
-     transform: rotate(360deg);
-   }
- }
-
-
-
-@keyframes rotate2 {
-   0% {
-     transform: rotate(0deg);
-    }
-   50% {
-    transform: rotate(-180deg);
-   }
-   100% {
-     transform: rotate(-360deg);
-   }
- }
