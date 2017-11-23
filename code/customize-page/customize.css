@@ -27,7 +27,7 @@ h1 {
 #machine {
     bottom: 0; /*top: 163px*/
     margin-bottom: -13px;
-    width: 45%;
+    width: 650px;
     left: 15px;
     position: absolute;
     z-index: 1;
@@ -103,10 +103,9 @@ h1 {
 
 #lamp {
   position: relative;
-  z-index: 1;
-  left: 125px;
-  bottom: 570px;
-  width: 150px;
+  bottom: 550px;
+  width: 200px;
+  left: 100px;
 }
 
 /*
@@ -114,7 +113,7 @@ h1 {
 */
 
 #machine-container {
-    width: 41.5%;
+    width: 41.8%;
     min-height: 460px;
     left: 37px;
     bottom: 0px; /*top: 253.5px*/
