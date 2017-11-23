@@ -65,6 +65,8 @@ img {
   animation-delay: 1s;
 }
 
+/* Customize Text */
+
 #text {
   position: absolute;
   transform: rotate(-12deg);
@@ -77,6 +79,8 @@ img {
   animation: updown 1.5s linear infinite;
 }
 
+/* Customize Text animation*/
+
 @keyframes updown {
   0%{
     bottom: -26rem;
@@ -88,6 +92,7 @@ img {
     bottom: -26rem;
   }
 }
+/* Barn image with glow on hover */
 #barn {
   position: absolute;
   width: 200px;
@@ -102,7 +107,7 @@ img {
   z-index: 6;
 }
 
-
+/* Windmill with rotating wings */
 #windmill {
   position: absolute;
   transform: scale(0.3) rotate(1deg);
@@ -120,7 +125,7 @@ img {
 #house{
   position: absolute;
 }
-
+/* Sheep images/gif */
 #sheep1{
   position: absolute;
   width: 300px;
@@ -142,6 +147,7 @@ img {
   z-index: 6;
 }
 
+/* Still and rotatating planets */
 #planet-1 {
   position: absolute;
   bottom: -108rem;
@@ -165,7 +171,7 @@ img {
   animation: rotate 70s linear infinite;
 }
 
-
+/* Sign */
 #sign {
   position: absolute;
   bottom: -53rem;
@@ -175,6 +181,7 @@ img {
   z-index: 10;
 }
 
+/* Glowing Sun */
 #sun {
     position: absolute;
     bottom: -8rem;
@@ -189,6 +196,7 @@ img {
     animation: glow 40s linear infinite;
 }
 
+/* Title/Logo animation */
 @keyframes intro {
   0% {
       bottom: : 0rem;
@@ -200,6 +208,7 @@ img {
   }
 }
 
+/* Sun glow animation */
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
@@ -215,6 +224,7 @@ img {
   }
 }
 
+/* Animation for rotating planet */
 @keyframes rotate {
     0%
     {
@@ -230,6 +240,7 @@ img {
     }
 }
 
+/* Animation for rotating windmill */
 @keyframes rotate1 {
    0% {
      transform: rotate(0deg);
@@ -242,6 +253,7 @@ img {
    }
  }
 
+/* Animation for birds */
 @keyframes fly {
   0% {
     left: -40rem;
