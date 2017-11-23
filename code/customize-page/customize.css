@@ -9,10 +9,13 @@ a {
     text-align: center;
 }
 body {
-    background-image: url("images/123213213213213123213123.png");
+    background-image: url("images/barn_inside.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
 }
 
 h1 {
@@ -22,8 +25,10 @@ h1 {
 }
 
 #machine {
-    top: 163px; /*163px*/
+    bottom: 0; /*top: 163px*/
+    margin-bottom: -13px;
     width: 650px;
+    left: 15px;
     position: absolute;
     z-index: 1;
 }
@@ -43,7 +48,7 @@ h1 {
     width: 110%;
     background-color: black;
     margin: -10px;
-    opacity: 0.5;
+    opacity: 0.2;
     top:0px;
     position: fixed;
     z-index: -1;
@@ -57,17 +62,19 @@ h1 {
 #stage {
     width: 400px;
     height: 500px;
-    left: 691px;
-    top: 216px;
-    position:relative;
-    overflow: hidden;
+    left: 707px;
+    bottom: 67px;
+    position: absolute;
+
 }
 
 #sheep {
-    position: absolute;
+    position: relative;
     width: 400px;
     z-index: 2;
-    top: 180px;
+    top: 150px;
+    left: 0px;
+    margin-left: -20px;
 }
 
 #shadow {
@@ -75,7 +82,7 @@ h1 {
     height: 70px;
     border-radius: 60%;
     background-color: #5b5b5b;
-    position: absolute;
+    position: relative;
     bottom: 0;
     opacity: 1;
     z-index: 1;
@@ -83,21 +90,22 @@ h1 {
 
 #spotlight {
     width: 0;
-    height: 0;
+    height: 0px;
     border-style: solid;
     border-width: 0 200px 500px 200px;
     border-color: #f7ff00 transparent;
-    bottom: 38px;
+    top: 0;
+    margin-top: -533px;
     opacity: 0.6;
-    position: absolute;
+    position: relative;
     z-index: 0;
 }
 
-#lamp{
-  position: absolute;
-  z-index: -1;
-  left: 823px;
-  top: 139px;
+#lamp {
+  position: relative;
+  z-index: 1;
+  left: 125px;
+  bottom: 570px;
   width: 150px;
 }
 
@@ -109,7 +117,7 @@ h1 {
     width: 599px;
     height: 457px;
     left: 33px;
-    top: 263.5px;
+    bottom: 79px; /*top: 253.5px*/
     position: absolute;
     border-radius: 15px;
     z-index: 2;
