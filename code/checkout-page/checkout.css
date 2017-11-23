@@ -223,8 +223,8 @@ transform: translateY(2px);
 #sau-back-black{
   position: absolute;
   left: 1200px;
-  top: 370px;
-  width: 160px;
+  top: 340px;
+  width: 200px;
   z-index: 1;
 }
 #sau-back-black:hover{
@@ -302,7 +302,7 @@ transform: translateY(2px);
     left:1200px;}
   50%{transform: scale(2) scaleX(-1);
       left:850px;
-      top:400px;}
+      top:350px;}
   75%{
     left:1200px;
     transform: scaleX(-1);}
