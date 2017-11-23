@@ -27,24 +27,25 @@ html, body {
 #sign {
 position: absolute;
 bottom: -52rem;
-left: 39rem;
-width: 700px;
-z-index: 8;
+left: 30rem;
+width: 1000px;
+height: 750px;
+z-index: 7;
 }
 
 #windmill {
   position: absolute;
   transform: scale(0.3) rotate(-7deg);
-  bottom: -19rem;
+  bottom: -21rem;
   left: 100rem;
-  z-index: 7;
+  z-index: 6;
 }
 #wings{
   position: absolute;
   left: 5.9rem;
   bottom: -48rem;
   z-index: 1;
-  animation: rotate1 3s linear infinite;
+  animation: rotate 3s linear infinite;
 }
 #house{
   position: absolute;
@@ -54,7 +55,7 @@ z-index: 8;
 #sheep1 {
 position: absolute;
 bottom: -55rem;
-left: 93em;
+left: 97rem;
 width: 230px;
 z-index: 5;
 }
@@ -78,7 +79,7 @@ z-index: 5;
 #planet-1 {
   position: absolute;
   bottom: -108rem;
-  left: 30rem;
+  left: 35rem;
   width: 1000px;
   z-index: 4;
 }
@@ -86,7 +87,7 @@ z-index: 5;
 #planet-2 {
   position: absolute;
   bottom: -108rem;
-  left: -10rem;
+  left: -5rem;
   width: 950px;
   z-index: 2;
 }
@@ -94,18 +95,32 @@ z-index: 5;
 #planet-3 {
   position: absolute;
   bottom: -108rem;
-  left: 70rem;
+  left: 75rem;
   width: 950px;
   z-index: 3;
-  animation: rotate1 40s linear infinite;
+  animation: rotate 40s linear infinite;
 }
 
-#arrow {
+#arrow{
   position: absolute;
-  bottom: -60rem;
-  left: 15rem;
-  width: 120px;
-  z-index: 8;
+  width: 140px;
+  height: 15rem;
+  bottom: -50rem;
+  left: 7rem;
+}
+
+#yellow-glow-arrow:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+
+}
+
+.About-text:before {
+content: "About";
+position: absolute;
+left: 200rem;
+bottom: 60rem;
+z-index: 8;
 }
 
 .sun {
@@ -118,9 +133,10 @@ z-index: 5;
     height: 200px;
     background: #FFFF66	;
     border-radius: 50%;
-    box-shadow: 0px 0px 40px 15px yellow;
-    animation: glow 40s linear infinite;
+    box-shadow: 0px 0px 40px 25px yellow;
+    animation: glow 20s linear infinite;
 }
+
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
