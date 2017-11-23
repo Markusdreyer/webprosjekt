@@ -50,22 +50,7 @@
   top: 0%;
   background-color: #8b8615;
 }
-.hay-layer1{
-  position: relative;
-  height: 15px;
-  width: 5px;
-  top: 0%;
-  background-color: #8b8615;
-    transform: translateX(50px);
-}
-.hay-layer2{
-  position: relative;
-  height: 15px;
-  width: 7px;
-  top: -20px;
-  background-color: #8b8615;
-  transform: translateX(100px);
-}
+
 .texture-1{
   left: 15%;
   top: 10%;
@@ -119,6 +104,22 @@
 .texture-14{
   left: 65%;
   top:-55%;
+}
+.hay-layer1{
+  position: relative;
+  height: 15px;
+  width: 5px;
+  top: 0%;
+  background-color: #8b8615;
+    transform: translateX(50px);
+}
+.hay-layer2{
+  position: relative;
+  height: 15px;
+  width: 7px;
+  top: -20px;
+  background-color: #8b8615;
+  transform: translateX(100px);
 }
 /*
 * img-container is the mother element to the class "plane" with grass1, grass2 and so on
