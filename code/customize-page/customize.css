@@ -35,7 +35,8 @@ body {
     font-family: coyote;
     position: absolute;
     border: 5px solid #5b5b5b;
-    left: 1200px;
+    right: 0;
+    margin-right: 80px;
     bottom: 30px;
     padding: 20px;
     color: white;
@@ -288,7 +289,13 @@ h1 {
     height: 0.5px;
     width: 0.5px;
     border: 3px solid black;
+    box-shadow: 0px 3px  #838383;
 
+}
+
+.button:active {
+    box-shadow: 0px 1px #454545;
+    transform: translateY(2px);
 }
 
 .knapp1:hover, .knapp2:hover, .knapp3:hover, .knapp4:hover, .knapp5:hover, .knapp6:hover, .knapp7:hover, .knapp8:hover, .knapp9:hover{
