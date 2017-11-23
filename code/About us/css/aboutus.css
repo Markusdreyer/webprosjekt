@@ -104,8 +104,8 @@ z-index: 5;
 }
 
 #yellow-glow-arrow:hover{
-  filter: drop-shadow(2px 2px 0 yellow)
-          drop-shadow(-2px -2px 0 yellow);
+  filter: drop-shadow(2px 2px 10px yellow)
+          drop-shadow(-2px -2px 10px yellow);
 
 }
 
