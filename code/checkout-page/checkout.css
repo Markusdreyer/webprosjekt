@@ -39,6 +39,9 @@
   top:740px;
   left: -590px;
 }
+/*
+* .hay, .hay-layer1, .hay-layer2 are connected to texture-1,texture-2 and so on
+*/
 
 .hay{
   position: relative;
@@ -46,7 +49,22 @@
   width: 5px;
   top: 0%;
   background-color: #8b8615;
-
+}
+.hay-layer1{
+  position: relative;
+  height: 15px;
+  width: 5px;
+  top: 0%;
+  background-color: #8b8615;
+    transform: translateX(50px);
+}
+.hay-layer2{
+  position: relative;
+  height: 15px;
+  width: 7px;
+  top: -20px;
+  background-color: #8b8615;
+  transform: translateX(100px);
 }
 .texture-1{
   left: 15%;
@@ -102,22 +120,9 @@
   left: 65%;
   top:-55%;
 }
-.hay-layer1{
-  position: relative;
-  height: 15px;
-  width: 5px;
-  top: 0%;
-  background-color: #8b8615;
-    transform: translateX(50px);
-}
-.hay-layer2{
-  position: relative;
-  height: 15px;
-  width: 7px;
-  top: -20px;
-  background-color: #8b8615;
-  transform: translateX(100px);
-}
+/*
+* img-container is the mother element to the class "plane" with grass1, grass2 and so on
+*/
 #img-container{
   position: relative;
   width: 100%;
@@ -174,6 +179,9 @@
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
 }
+/*
+* everything with "pay" is connected together
+*/
 #pay{
   position: absolute;
   width: 400px;
@@ -212,6 +220,9 @@ box-shadow: 2px 4px #141614;
 transform: translateY(2px);
  z-index: 4;
 }
+/*
+* sheep img
+*/
 #sau-front{
   position: absolute;
   width: 300px;
@@ -239,6 +250,9 @@ transform: translateY(2px);
   animation: backflip 1s;
   animation-fill-mode: forwards;
 }
+/*
+* sun is loose on container(relative) everything else is absolute
+*/
 
 #sun {
     position: relative;
