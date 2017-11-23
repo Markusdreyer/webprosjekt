@@ -26,7 +26,7 @@ html, body {
 #logo {
     position: absolute;
     bottom: 0;
-    left: 45rem;
+    left: 30rem;
     width: 1000px;
     opacity: 1;
     z-index: 7;
@@ -160,7 +160,7 @@ html, body {
       opacity: 0;
   }
   100% {
-      bottom: -24rem;
+      bottom: -32rem;
       opacity: 1;
   }
 }
