@@ -12,11 +12,11 @@
 #hay-ground{
   position: absolute;
   height:1000px;
-  width:2100px;
+  width:3000px;
   border-radius: 200%;
   background-color: #ccc527;
   top:570px;
-  left: -220px;
+  left: -590px;
 }
 
 .hay{
@@ -131,6 +131,7 @@
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
 }
+
 #sau-front{
   position: absolute;
   width: 300px;
@@ -190,3 +191,15 @@
     100%{
       background-color: #370860;}
 }
+
+@keyframes rotate{
+   0% {
+     transform: rotate(0deg)
+    }
+   50% {
+    transform: rotate(-180deg)
+   }
+   100% {
+     transform: rotate(-360deg)
+   }
+ }
