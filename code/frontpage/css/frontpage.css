@@ -15,6 +15,7 @@ html, body {
   position: relative;
   left:0px;
   bottom: 250px;
+  overflow: hidden;
 }
 #logo {
     position: absolute;
@@ -29,21 +30,21 @@ html, body {
 
 #bird1 {
   position: absolute;
-  top: -1500px;
+  top: 0px;
   left: -200px;
   animation: fly 50s linear infinite;
 }
 #bird2 {
   position: absolute;
-  top: -1500px;
-  left: -200rem;
+  top: 0px;
+  left: -200px;
   animation: fly 50s linear infinite;
   animation-delay: 0.5s
 }
 #bird3 {
   position: absolute;
-  top: -1500px;
-  left: -200rem;
+  top: 0px;
+  left: -200px;
   animation: fly 50s linear infinite;
   animation-delay: 1s;
 }
