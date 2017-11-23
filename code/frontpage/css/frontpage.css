@@ -1,6 +1,6 @@
 html, body {
-  margin: 0 auto;
   padding: 0;
+  margin: 0;
 }
 img {
    height: auto;
@@ -24,6 +24,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
+  display: inline-block;
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -31,13 +33,10 @@ img {
 #logo {
     position: absolute;
     bottom: 0;
-<<<<<<< HEAD
     left: 45rem;
     width: 500px;
-=======
     left: 26rem;
     width: 1000px;
->>>>>>> da992833fa3e8ac31a46e7d40686a19398f7df92
     opacity: 1;
     z-index: 7;
     animation: intro 0.6s linear;
@@ -242,7 +241,7 @@ img {
      transform: rotate(-360deg);
    }
  }
- 
+
 @keyframes fly {
   0% {
     left: -40rem;
