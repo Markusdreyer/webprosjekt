@@ -6,15 +6,17 @@
   height: 110%;
   width: 110%;
   overflow: hidden;
+  animation: day-night 70s;
+  animation-fill-mode: forwards;
 }
 #hay-ground{
   position: absolute;
   height:1000px;
-  width:2100px;
+  width:3000px;
   border-radius: 200%;
   background-color: #ccc527;
   top:570px;
-  left: -220px;
+  left: -590px;
 }
 
 .hay{
@@ -125,6 +127,11 @@
   left: 450px;
   transform: rotate(-10deg);
 }
+#yellow-glow:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+}
+
 #sau-front{
   position: absolute;
   width: 300px;
@@ -166,15 +173,33 @@
 @keyframes glow {
   0% {
     box-shadow: 0px 0px 40px 15px yellow;
-    transform: rotate(220deg) translateX(1050px);
-  }
+    transform: rotate(220deg) translateX(1050px);}
   50% {
     box-shadow: 0px 0px 60px 30px orange;
-    transform: rotate(360deg) translateX(1050px) ;
-  }
+    transform: rotate(360deg) translateX(1050px) ;}
   100% {
     box-shadow: 0px 0px 40px 15px yellow;
-    transform: rotate(220deg) translateX(1050px) rotate(0deg);
-  }
+    transform: rotate(220deg) translateX(1050px) rotate(0deg);}
 
 }
+
+@keyframes day-night{
+  0%{
+    background-color: #370860;}
+  50%{
+    background-color:  #87CEEB;}
+    100%{
+      background-color: #370860;}
+}
+
+@keyframes rotate{
+   0% {
+     transform: rotate(0deg)
+    }
+   50% {
+    transform: rotate(-180deg)
+   }
+   100% {
+     transform: rotate(-360deg)
+   }
+ }
