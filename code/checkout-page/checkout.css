@@ -131,6 +131,20 @@
   filter: drop-shadow(2px 2px 0 yellow)
           drop-shadow(-2px -2px 0 yellow);
 }
+#millhouse{
+  position: absolute;
+  width:300px;
+  left:1300px;
+  top: 270px;
+}
+#wings{
+  position: absolute;
+  width:300px;
+  left:1300px;
+  top: 270px;
+  animation: rotate 10s infinite;
+  animation-fill-mode: forwards;
+}
 #sau-front{
   position: absolute;
   width: 300px;
@@ -190,3 +204,15 @@
     100%{
       background-color: #370860;}
 }
+
+@keyframes rotate{
+   0% {
+     transform: rotate(0deg)
+    }
+   50% {
+    transform: rotate(-180deg)
+   }
+   100% {
+     transform: rotate(-360deg)
+   }
+ }
