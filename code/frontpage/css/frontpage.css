@@ -3,7 +3,7 @@ html, body {
   padding: 0;
 }
 
-.container {
+#container {
   position: relative;
   display: inline-block;
   margin: auto;
@@ -12,7 +12,7 @@ html, body {
   bottom: 0;
   left: 0;
 }
-.backgroundimage {
+#backgroundimage {
   background: url("../images/background.png");
   background-color: #87CEEB;
   background-attachment: fixed;
@@ -26,7 +26,7 @@ html, body {
 #logo {
     position: absolute;
     bottom: 0;
-    left: 30rem;
+    left: 26rem;
     width: 1000px;
     opacity: 1;
     z-index: 7;
@@ -34,26 +34,40 @@ html, body {
     animation-fill-mode: forwards;
 
 }
+#text {
+  position: absolute;
+  transform: rotate(-12deg);
+  bottom: -26rem;
+  left: 89rem;
+  font-size: 2rem;
+  color: #30260f;
+  z-index: 1;
+  animation: updown 1.5s linear infinite;
+}
 
+@keyframes updown {
+  0%{
+    bottom: -26rem;
+  }
+  50% {
+    bottom: -24rem;
+  }
+  100% {
+    bottom: -26rem;
+  }
+}
 #barn {
   position: absolute;
   width: 200px;
   transform: rotate(-12deg);
-  bottom: -40rem;
-  left: 97rem;
+  bottom: -36rem;
+  left: 90rem;
   z-index: 1;
 }
-#barnglow {
-  display: none;
-  position: absolute;
-  width: 200px;
-  transform: rotate(-12deg);
-  bottom: -40rem;
-  left: 97rem;
-  z-index: 2;
-}
-#barn:hover > #barnglow {
-  display: block;
+#yellow-glow:hover{
+  filter: drop-shadow(2px 2px 0 yellow)
+          drop-shadow(-2px -2px 0 yellow);
+  z-index: 6;
 }
 
 
@@ -108,7 +122,7 @@ html, body {
   bottom: -108rem;
   left: -10rem;
   width: 1000px;
-  z-index: 2;
+  z-index: 0;
 }
 #planet-3 {
   position: absolute;
@@ -126,7 +140,7 @@ html, body {
   transform: rotate(-4deg);
   left: 12rem;
   width: 250px;
-  z-index: 6;
+  z-index: 10;
 }
 
 
@@ -140,7 +154,7 @@ html, body {
 }
 
 
-.sun {
+#sun {
     position: absolute;
     bottom: -15rem;
     left: 3rem;
