@@ -1,0 +1,321 @@
+html, body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Container Div */
+#container {
+  background-color: #87CEEB;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Background Image */
+#background-mountains
+{
+  position: relative;
+  left:0px;
+  bottom: 180px;
+}
+
+/* Logo/Title */
+#logo {
+    position: absolute;
+    left: 500px;
+    width: 750px;
+    top: 100px;
+    opacity: 1;
+    z-index: 7;
+    animation: intro 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+/* Birds */
+#bird1 {
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  z-index: 8;
+}
+#bird2 {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  animation-delay: 0.25s;
+  z-index: 6;
+}
+#bird3 {
+  position: absolute;
+  top: 100px;
+  left: -200px;
+  animation: fly 50s linear infinite;
+  animation-delay: 0.5s;
+  z-index: 6;
+}
+
+/* Customize Text */
+#text {
+  position: relative;
+  transform: rotate(-12deg);
+  top:100px;
+  left:400px;
+  font-size: 2rem;
+  color: #30260f;
+  z-index: 8;
+  animation: updown 1.5s linear infinite;
+}
+
+/* Customize Text animation*/
+@keyframes updown {
+  0%{
+    top: 100px;
+  }
+  50% {
+    top: 120px;
+  }
+  100% {
+    bottom: 100px;
+  }
+}
+/* Barn image with glow on hover */
+#barn {
+  position: absolute;
+  width: 200px;
+  transform: rotate(5deg);
+  top: 300px;
+  left: 1200px;
+  z-index: 8;
+}
+
+#yellow-glow:hover{
+  filter: drop-shadow(5px 5px 15px yellow)
+          drop-shadow(-5px -5px 15px yellow);
+  z-index: 8;
+}
+
+#barn:active {
+    animation: barn-size 0.7s;
+    animation-fill-mode: forwards;
+}
+
+/* Windmill with rotating wings */
+#windmill {
+  position: absolute;
+  transform: scale(0.3) rotate(-3deg);
+  top: 150px;
+  left: 100px;
+  z-index: 5;
+}
+#wings{
+  position: absolute;
+  left: 5.9rem;
+  bottom: -48rem;
+  z-index: 1;
+  animation: rotate1 3s linear infinite;
+}
+#house{
+  position: absolute;
+}
+
+/* Sheep images/gif */
+#sheep1{
+  position: absolute;
+  width: 300px;
+  top: 400px;
+  left: 800px;
+  z-index: 11;
+}
+#sheep2{
+  position: absolute;
+  width: 100px;
+  top: 410px;
+  left: 560px;
+  z-index: 1;
+  transform: rotatey(-180deg);
+  animation:  walk 5s linear;
+  animation-fill-mode: forwards;
+}
+#sheep3{
+  position: absolute;
+  width: 250px;
+  top: 400px;
+  left: 1450px;
+  z-index: 6;
+}
+
+/* Sheep talking bubbles */
+#sheep-speech1{
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-family: helvetica;
+    border-radius: 20px;
+    left: 730px;
+    top: 350px;
+    display: none;
+
+}
+#sheep1:hover ~ #sheep-speech1{
+    display: block;
+}
+
+/* Still and rotating planets */
+#planet-1 {
+  position: absolute;
+  top: 590px;
+  left: -100px;
+  width: 1100px;
+  z-index: 9;
+}
+#planet-2 {
+  position: absolute;
+  top: 530px;
+  left: 500px;
+  width: 1000px;
+  z-index: 10;
+}
+#planet-3 {
+  position: absolute;
+  top: 520px;
+  left: 1100px;
+  width: 1000px;
+  z-index: 1;
+  animation: rotate 70s linear infinite;
+}
+
+/* Sign */
+#sign {
+  position: absolute;
+  top: 380px;
+  transform: rotate(-4deg);
+  left: 300px;
+  width: 250px;
+  z-index: 7;
+}
+
+/* Sun */
+#sun {
+    position: absolute;
+    top: -600px;
+    left: -400px;
+    width: 750px;
+    height: 750px;
+    background: #FFFF66	;
+    border-radius: 50%;
+    box-shadow: 0px 0px 60px 15px yellow;
+    animation: glow 40s linear infinite;
+}
+
+/* Title/Logo animation */
+@keyframes intro {
+  0% {
+      top:-200px;
+      opacity: 0;
+  }
+  100% {
+      top: 30px;
+      opacity: 1;
+  }
+}
+
+/* Sun glow animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 40px 15px yellow;
+    background: #FFFF66	;
+  }
+  50% {
+    box-shadow: 0px 0px 60px 30px #FFFF66;
+    background: yellow;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 15px yellow;
+    background: #FFFF66	;
+  }
+}
+
+/* Animation for rotating planet */
+@keyframes rotate {
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    50%
+    {
+        transform: rotate(180deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+/* Animation for rotating windmill */
+@keyframes rotate1 {
+   0% {
+     transform: rotate(0deg);
+    }
+   50% {
+    transform: rotate(-180deg);
+   }
+   100% {
+     transform: rotate(-360deg);
+   }
+ }
+ /* Animation for black sheep */
+ @keyframes walk {
+   0% {
+     top: 410px;
+     left: 560px;
+   }
+   100% {
+     top: 610px;
+     left: 940px;
+   }
+ }
+
+/* Animation for birds */
+@keyframes fly {
+  0% {
+    left: -500px;
+  }
+  20% {
+    left: 2000px;
+    transform: rotateY( 0deg);
+  }
+  40% {
+    left: 2000px;
+    transform: rotateY( 180deg);
+  }
+  60% {
+    left: 2000px;
+    transform: rotateY( 180deg);
+  }
+  80% {
+    left: -500px;
+    transform: rotateY( 180deg);
+  }
+  100% {
+    left: -500px;
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes barn-size {
+    0% {
+        transform: scale(1) rotate(5deg);
+        top: 300px;
+        left: 1200px;
+    }
+    100% {
+        transform: scale(2) rotate(5deg);
+        top: 300px;
+        left: 1200px;
+
+    }
+}

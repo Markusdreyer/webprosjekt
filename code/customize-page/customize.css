@@ -234,8 +234,7 @@ h1 {
 }
 
 
-#info-text
-{
+#info-text  {
   position: absolute;
   text-align: left;
   width: 212px;
@@ -251,9 +250,9 @@ h1 {
   display: none;
   font-family: coyote;
   line-height: 18px;
-  animation: textbox-move
-  z-index: 200;
+  animation: textbox-move;
 }
+
 #info-box:hover ~ #info-text{
   display: block;
 }
